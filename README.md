@@ -1,2 +1,2 @@
 # tceWork
-TCE Assignments 
+TCE Assignments are kept here.
