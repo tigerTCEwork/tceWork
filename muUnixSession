@@ -1,0 +1,1595 @@
+Script started on 2023-02-20 22:33:13+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="44"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mbin[0m  hello.txt  muUnixSession
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 44
+drwxr-x--- 4 brij brij 4096 Feb 20 22:33 [0m[01;34m.[0m
+drwxr-xr-x 3 root root 4096 Feb  6 16:16 [01;34m..[0m
+-rw------- 1 brij brij  598 Feb 19 13:02 .bash_history
+-rw-r--r-- 1 brij brij  220 Feb  6 16:16 .bash_logout
+-rw-r--r-- 1 brij brij 3771 Feb  6 16:16 .bashrc
+-rw------- 1 brij brij   20 Feb 19 12:49 .lesshst
+-rw-r--r-- 1 brij brij    0 Feb 20 20:08 .motd_shown
+-rw-r--r-- 1 brij brij  807 Feb  6 16:16 .profile
+-rw------- 1 brij brij 2280 Feb 20 20:12 .viminfo
+drwxr-xr-x 3 brij brij 4096 Feb 20 20:15 [01;34mDesktop[0m
+drwxr-xr-x 2 brij brij 4096 Feb 19 13:02 [01;34mbin[0m
+-rw-r--r-- 1 brij brij   25 Feb 20 20:12 hello.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:33 muUnixSession
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ks
+[?2004lks: command not found
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ pwd
+[?2004l/home/brij
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -F
+[?2004l[0m[01;34mDesktop[0m/  [01;34mbin[0m/  hello.txt  muUnixSession
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls --help
+[?2004lUsage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ man ls 
+[?2004l[?1049h[22;0;0t[?1h=LS(1)                             User Commands                            LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about  the  FILEs  (the current directory by default).[m
+       Sort entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with  [1m-l[0m,  scale  sizes  by  SIZE  when   printing   them;   e.g.,[m
+              '--block-size=M'; see SIZE format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+       [1m-c[0m     with  [1m-lt[0m:  sort by, and show, ctime (time of last modification of[m
+              file status information); with [1m-l[0m: show ctime and  sort  by  name;[m
+              otherwise: sort by ctime, newest first[m
+[m
+       [1m-C[0m     list entries by columns[m
+[m
+       [1m--color[0m[=[4mWHEN[24m][m
+              colorize  the  output;  WHEN can be 'always' (default if omitted),[m
+              'auto', or 'never'; more info below[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--directory[0m[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              list directories themselves, not their contents[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-D[0m, [1m--dired[0m[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              generate output designed for Emacs' dired mode[m
+[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-F[0m, [1m--classify[0m[m
+[7m Manual page ls(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              append indicator (one of */=>@|) to entries[m
+[7m Manual page ls(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--file-type[0m[m
+[7m Manual page ls(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              likewise, except do not append '*'[m
+[7m Manual page ls(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--format[0m=[4mWORD[24m[m
+[7m Manual page ls(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long  [1m-l[0m,  single-column  [1m-1[0m,[m
+[7m Manual page ls(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              verbose [1m-l[0m, vertical [1m-C[0m[m
+[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--full-time[0m[m
+[7m Manual page ls(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[7m Manual page ls(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[7m Manual page ls(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--group-directories-first[0m[m
+[7m Manual page ls(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              group directories before files;[m
+[7m Manual page ls(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              can  be augmented with a [1m--sort[0m option, but any use of [1m--sort[0m=[4mnone[24m[m
+[7m Manual page ls(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ([1m-U[0m) disables grouping[m
+[7m Manual page ls(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 31 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -j
+[?2004lls: invalid option -- 'j'
+Try 'ls --help' for more information.
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd ..
+[?2004l[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ pwd
+[?2004l/home
+[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ cd brij/
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls[K[Kpwd
+[?2004l/home/brij
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd ..
+[?2004l[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ pwd
+[?2004l/home
+[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ cd brq
+[?2004lbash: cd: brq: No such file or directory
+[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ cd brq[Kij/
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd -
+[?2004l/home
+[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: /home[01;32mbrij@TIGER01229[00m:[01;34m/home[00m$ cd brij/
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -aF
+[?2004l[0m[01;34m.[0m/   .bash_history  .bashrc   .motd_shown  .viminfo  [01;34mbin[0m/       muUnixSession
+[01;34m..[0m/  .bash_logout   .lesshst  .profile     [01;34mDesktop[0m/  hello.txt
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 60
+drwxr-x--- 4 brij brij  4096 Feb 20 22:34 [0m[01;34m.[0m
+drwxr-xr-x 3 root root  4096 Feb  6 16:16 [01;34m..[0m
+-rw------- 1 brij brij   598 Feb 19 13:02 .bash_history
+-rw-r--r-- 1 brij brij   220 Feb  6 16:16 .bash_logout
+-rw-r--r-- 1 brij brij  3771 Feb  6 16:16 .bashrc
+-rw------- 1 brij brij    20 Feb 20 22:34 .lesshst
+-rw-r--r-- 1 brij brij     0 Feb 20 20:08 .motd_shown
+-rw-r--r-- 1 brij brij   807 Feb  6 16:16 .profile
+-rw------- 1 brij brij  2280 Feb 20 20:12 .viminfo
+drwxr-xr-x 3 brij brij  4096 Feb 20 20:15 [01;34mDesktop[0m
+drwxr-xr-x 2 brij brij  4096 Feb 19 13:02 [01;34mbin[0m
+-rw-r--r-- 1 brij brij    25 Feb 20 20:12 hello.txt
+-rw-r--r-- 1 brij brij 16384 Feb 20 22:34 muUnixSession
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd Desktop/
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop[00m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x 3 brij brij 4096 Feb 20 20:15 [0m[01;34m.[0m
+drwxr-x--- 4 brij brij 4096 Feb 20 22:34 [01;34m..[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 20:16 [01;34mshell-lesson-data[0m
+[?2004h]0;brij@TIGER01229: ~/Desktop[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop[00m$ cd ~
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ pwd
+[?2004l/home/brij
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -s
+[?2004ltotal 32
+ 4 [0m[01;34mDesktop[0m   4 [01;34mbin[0m   4 hello.txt  20 muUnixSession
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -as
+[?2004ltotal 64
+ 4 [0m[01;34m.[0m               4 .bash_logout   0 .motd_shown   4 [01;34mDesktop[0m    20 muUnixSession
+ 4 [01;34m..[0m              4 .bashrc        4 .profile      4 [01;34mbin[0m
+ 4 .bash_history   4 .lesshst       4 .viminfo      4 hello.txt
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mkdir thesis
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd theq[Ksis/
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ touoch [K[K[K[Kch haiky[Ku.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ touch Li[K[KlittleWomen.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ ls
+[?2004lhaiku.txt  littleWomen.txt
+[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ cd .
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ pwd
+[?2004l/home/brij/thesis
+[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ cd /[K..
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mkdir =-[K[K=p project/data/result
+[?2004lmkdir: cannot create directory ‘project/data/result’: No such file or directory
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mkdir =p project/data/result[1P[1@-
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 80
+drwxr-x--- 7 brij brij  4096 Feb 20 22:36  [0m[01;34m.[0m
+drwxr-xr-x 3 root root  4096 Feb  6 16:16  [01;34m..[0m
+-rw------- 1 brij brij   598 Feb 19 13:02  .bash_history
+-rw-r--r-- 1 brij brij   220 Feb  6 16:16  .bash_logout
+-rw-r--r-- 1 brij brij  3771 Feb  6 16:16  .bashrc
+-rw------- 1 brij brij    20 Feb 20 22:34  .lesshst
+-rw-r--r-- 1 brij brij     0 Feb 20 20:08  .motd_shown
+-rw-r--r-- 1 brij brij   807 Feb  6 16:16  .profile
+-rw------- 1 brij brij  2280 Feb 20 20:12  .viminfo
+drwxr-xr-x 2 brij brij  4096 Feb 20 22:36 [01;34m'=p'[0m
+drwxr-xr-x 3 brij brij  4096 Feb 20 20:15  [01;34mDesktop[0m
+drwxr-xr-x 2 brij brij  4096 Feb 19 13:02  [01;34mbin[0m
+-rw-r--r-- 1 brij brij    25 Feb 20 20:12  hello.txt
+-rw-r--r-- 1 brij brij 24576 Feb 20 22:36  muUnixSession
+drwxr-xr-x 3 brij brij  4096 Feb 20 22:36  [01;34mproject[0m
+drwxr-xr-x 2 brij brij  4096 Feb 20 22:36  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd project/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ ls
+[?2004l[0m[01;34mdata[0m
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cd data
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls
+[?2004l[0m[01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ cd p
+[?2004lbash: cd: p: No such file or directory
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls
+[?2004l[0m[01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ cd result/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ ls
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ touch deaft.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ vo deaft.txt [K^C[?2004l[?2004h[?2004l
+[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ mv deaft.txt  draft.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ vi draft.txt 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"draft.txt" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [18;1H~                                                                                  [19;1H~                                                                                  [20;1H~                                                                                  [21;1H~                                                                                  [22;1H~                                                                                  [23;1H~                                                                                  [24;1H~                                                                                  [25;1H~                                                                                  [26;1H~                                                                                  [27;1H~                                                                                  [28;1H~                                                                                  [29;1H~                                                                                  [30;1H~                                                                                  [31;1H~                                                                                  [32;1H~                                                                                  [33;1H~                                                                                  [34;1H~                                                                                  [35;1H~                                                                                  [36;1H~                                                                                  [37;1H~                                                                                  [38;1H~                                                                                  [39;1H~                                                                                  [40;1H~                                                                                  [41;1H~                                                                                  [42;1H~                                                                                  [m[43;66H0,0-1[9CAll[1;1H[?25h[?25l[43;56Hi[1;1H[43;56H [1;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;66H0,1[11CAll[1;1H[?25h[?25lT[43;66H1,2[1;2H[?25h[?25lh[43;68H3[1;3H[?25h[?25li[43;68H4[1;4H[?25h[?25ls[43;68H5[1;5H[?25h[?25l[43;68H6[1;6H[?25h[?25ll[43;68H7[1;7H[?25h[?25li[43;68H8[1;8H[?25h[?25l[1;7H[K[43;68H7[1;7H[?25h[?25l[1;6H[K[43;68H6[1;6H[?25h[?25li[43;68H7[1;7H[?25h[?25ls[43;68H8[1;8H[?25h[?25l[43;68H9[1;9H[?25h[?25lf[43;68H10[1;10H[?25h[?25li[43;69H1[1;11H[?25h[?25ls[43;69H2[1;12H[?25h[?25lt[43;69H3[1;13H[?25h[?25l[43;69H4[1;14H[?25h[?25ll[43;69H5[1;15H[?25h[?25li[43;69H6[1;16H[?25h[?25ln[43;69H7[1;17H[?25h[?25le[43;69H8[1;18H[?25h[?25l[43;69H9[1;19H[?25h[?25l[2;1H[K[43;66H2,1 [2;1H[?25h[?25lT[43;68H2[2;2H[?25h[?25lh[43;68H3[2;3H[?25h[?25li[43;68H4[2;4H[?25h[?25l[43;68H5[2;5H[?25h[?25ls[43;68H6[2;6H[?25h[?25l[2;5H[K[43;68H5[2;5H[?25h[?25l[43;68H4[2;4H[?25h[?25ls[43;68H5[2;5H[?25h[?25l[43;68H6[2;6H[?25h[?25li[43;68H7[2;7H[?25h[?25ls[43;68H8[2;8H[?25h[?25l[43;68H9[2;9H[?25h[?25ls[43;68H10[2;10H[?25h[?25ld[43;69H1[2;11H[?25h[?25le[43;69H2[2;12H[?25h[?25l[2;11H[K[43;69H1[2;11H[?25h[?25l[2;10H[K[43;69H0[2;10H[?25h[?25le[43;69H1[2;11H[?25h[?25lc[43;69H2[2;12H[?25h[?25lo[43;69H3[2;13H[?25h[?25ln[43;69H4[2;14H[?25h[?25l[43;69H5[2;15H[?25h[?25l[43;69H4[2;14H[?25h[?25ld[43;69H5[2;15H[?25h[?25l[43;69H6[2;16H[?25h[?25ll[43;69H7[2;17H[?25h[?25li[43;69H8[2;18H[?25h[?25ln[43;69H9[2;19H[?25h[?25le[43;68H20[2;20H[?25h[?25l[43;69H1[2;21H[?25h[?25l[3;1H[K[43;66H3,1 [3;1H[?25h[?25l[4;1H[K[43;66H4[4;1H[?25h[?25l[5;1H[K[43;66H5[5;1H[?25h[?25l[6;1H[K[43;66H6[6;1H[?25h[?25l[7;1H[K[43;66H7[7;1H[?25h[?25l[8;1H[K[43;66H8[8;1H[?25h[?25l[9;1H[K[43;66H9[9;1H[?25h[?25lT[43;68H2[9;2H[?25h[?25lh[43;68H3[9;3H[?25h[?25li[43;68H4[9;4H[?25h[?25ls[43;68H5[9;5H[?25h[?25l[43;68H6[9;6H[?25h[?25li[43;68H7[9;7H[?25h[?25ls[43;68H8[9;8H[?25h[?25l[43;68H9[9;9H[?25h[?25ll[43;68H10[9;10H[?25h[?25la[43;69H1[9;11H[?25h[?25ls[43;69H2[9;12H[?25h[?25lt[43;69H3[9;13H[?25h[?25l[43;69H4[9;14H[?25h[?25ll[43;69H5[9;15H[?25h[?25li[43;69H6[9;16H[?25h[?25ln[43;69H7[9;17H[?25h[?25le[43;69H8[9;18H[?25h[?25l[43;69H9[9;19H[?25h[43;1H[K[9;18H[?25l[43;56H^[[9;18H[43;56H  [9;19H[43;66H9,18[10CAll[9;18H[?25h[?25l[43;56H:[9;18H[43;56H[K[43;1H:[?25hwq[?25l[?2004l[>4;m"draft.txt" 9L, 65B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ cat draft.txt 
+[?2004lThis is fist line 
+This is second line 
+
+
+
+
+
+
+This is last line 
+[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ touch removeThisFile.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ cat[K[K[Kecho "Delete this [K" > removeThisFile.txt 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ cat removeThisFile.txt 
+[?2004lDelete this
+[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ rm removeThisFile.txt 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ ls p[K-al
+[?2004ltotal 12
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:39 [0m[01;34m.[0m
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:36 [01;34m..[0m
+-rw-r--r-- 1 brij brij   65 Feb 20 22:38 draft.txt
+[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data/result[01;32mbrij@TIGER01229[00m:[01;34m~/project/data/result[00m$ cd ~
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mkdir -p [K[K[K[K[K[K[K[K[Kls -al
+[?2004ltotal 96
+drwxr-x--- 7 brij brij  4096 Feb 20 22:38  [0m[01;34m.[0m
+drwxr-xr-x 3 root root  4096 Feb  6 16:16  [01;34m..[0m
+-rw------- 1 brij brij   598 Feb 19 13:02  .bash_history
+-rw-r--r-- 1 brij brij   220 Feb  6 16:16  .bash_logout
+-rw-r--r-- 1 brij brij  3771 Feb  6 16:16  .bashrc
+-rw------- 1 brij brij    20 Feb 20 22:34  .lesshst
+-rw-r--r-- 1 brij brij     0 Feb 20 20:08  .motd_shown
+-rw-r--r-- 1 brij brij   807 Feb  6 16:16  .profile
+-rw------- 1 brij brij  3927 Feb 20 22:38  .viminfo
+drwxr-xr-x 2 brij brij  4096 Feb 20 22:36 [01;34m'=p'[0m
+drwxr-xr-x 3 brij brij  4096 Feb 20 20:15  [01;34mDesktop[0m
+drwxr-xr-x 2 brij brij  4096 Feb 19 13:02  [01;34mbin[0m
+-rw-r--r-- 1 brij brij    25 Feb 20 20:12  hello.txt
+-rw-r--r-- 1 brij brij 36864 Feb 20 22:38  muUnixSession
+drwxr-xr-x 3 brij brij  4096 Feb 20 22:36  [01;34mproject[0m
+drwxr-xr-x 2 brij brij  4096 Feb 20 22:36  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd Desktop/
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop[00m$ ls
+[?2004l[0m[01;34mshell-lesson-data[0m
+[?2004h]0;brij@TIGER01229: ~/Desktop[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop[00m$ s[Kcd shell-lesson-data/
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data[00m$ ls -al
+[?2004ltotal 16
+drwxr-xr-x 4 brij brij 4096 Feb 20 20:16 [0m[01;34m.[0m
+drwxr-xr-x 3 brij brij 4096 Feb 20 20:15 [01;34m..[0m
+drwxr-xr-x 2 brij brij 4096 Feb 20 20:16 [01;34mexercise-data[0m
+drwxr-xr-x 2 brij brij 4096 Feb 20 20:16 [01;34mnorth-pacific-gyre[0m
+[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data[00m$ cd exercise-data/
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ ls- -[Cl
+[?2004ltotal 0
+[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ ls -al
+[?2004ltotal 8
+drwxr-xr-x 2 brij brij 4096 Feb 20 20:16 [0m[01;34m.[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 20:16 [01;34m..[0m
+[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ c[Kmkd[K[Kkdir writing 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:40 [0m[01;34m.[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 20:16 [01;34m..[0m
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:40 [01;34mwriting[0m
+[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data[00m$ cd ~
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ pwd
+[?2004l/home/brij
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd Desktop/shell-lesson-data/exercise-data/writing/
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data/writing[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data/writing[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data/writing[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data/writing[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/Desktop/shell-lesson-data/exercise-data/writing[01;32mbrij@TIGER01229[00m:[01;34m~/Desktop/shell-lesson-data/exercise-data/writing[00m$ cd ~
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ echo 'Renaming file na[K[K[K'
+[?2004lRenaming file
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd thesis/
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ ls -al
+[?2004ltotal 8
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:36 [0m[01;34m.[0m
+drwxr-x--- 7 brij brij 4096 Feb 20 22:38 [01;34m..[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:36 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:36 littleWomen.txt
+[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ touch fraft.[K[K[K[K[K[Kde[Kraft.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ ls -al
+[?2004ltotal 8
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:41 [0m[01;34m.[0m
+drwxr-x--- 7 brij brij 4096 Feb 20 22:38 [01;34m..[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:41 draft.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:36 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:36 littleWomen.txt
+[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ mv draft.txt  quotes.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ ls -al
+[?2004ltotal 8
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:41 [0m[01;34m.[0m
+drwxr-x--- 7 brij brij 4096 Feb 20 22:38 [01;34m..[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:36 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:36 littleWomen.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:41 quotes.txt
+[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ l[Kcd //[K[K..
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls trh[K[Khesis/
+[?2004lhaiku.txt  littleWomen.txt  quotes.txt
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 104
+drwxr-x--- 7 brij brij  4096 Feb 20 22:38  [0m[01;34m.[0m
+drwxr-xr-x 3 root root  4096 Feb  6 16:16  [01;34m..[0m
+-rw------- 1 brij brij   598 Feb 19 13:02  .bash_history
+-rw-r--r-- 1 brij brij   220 Feb  6 16:16  .bash_logout
+-rw-r--r-- 1 brij brij  3771 Feb  6 16:16  .bashrc
+-rw------- 1 brij brij    20 Feb 20 22:34  .lesshst
+-rw-r--r-- 1 brij brij     0 Feb 20 20:08  .motd_shown
+-rw-r--r-- 1 brij brij   807 Feb  6 16:16  .profile
+-rw------- 1 brij brij  3927 Feb 20 22:38  .viminfo
+drwxr-xr-x 2 brij brij  4096 Feb 20 22:36 [01;34m'=p'[0m
+drwxr-xr-x 3 brij brij  4096 Feb 20 20:15  [01;34mDesktop[0m
+drwxr-xr-x 2 brij brij  4096 Feb 19 13:02  [01;34mbin[0m
+-rw-r--r-- 1 brij brij    25 Feb 20 20:12  hello.txt
+-rw-r--r-- 1 brij brij 45056 Feb 20 22:40  muUnixSession
+drwxr-xr-x 3 brij brij  4096 Feb 20 22:36  [01;34mproject[0m
+drwxr-xr-x 2 brij brij  4096 Feb 20 22:41  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls thesis/
+[?2004lhaiku.txt  littleWomen.txt  quotes.txt
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cp -r thesis/
+[?2004lcp: missing destination file operand after 'thesis/'
+Try 'cp --help' for more information.
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cp -r thesis/ project/
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls project/
+[?2004l[0m[01;34mdata[0m  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls project/[11@cp -r thesis/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pls[C[C[C[C[C[C[C[C[C[Kcp ls project/[11@cp -r thesis/[C[C[C[C[C[C[C[C[C* project/
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ c[Kls project/
+[?2004l[0m[01;34mdata[0m  haiku.txt  littleWomen.txt  quotes.txt  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd project/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cd data/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:36 [0m[01;34m.[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:42 [01;34m..[0m
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:39 [01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch cubane.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch cubane.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdbm.pdbe.pdbt.pdbh.pdba.pdbn.pdbe.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch methane.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdbp.pdbe.pdbn.pdbt.pdba.pdbn.pdbe.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch pentane.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdbe.pdbt.pdbh.pdba.pdbn.pdbe.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch ethane.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb .pdbo.pdbc.pdbt.pdba.pdbn.pdbe.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch octane.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdb[1P.pdbp.pdbr.pdbp.pdbp.pdba.pdbn.pdbe.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ mc [K[Kv prppane.pdb  propane.pf[Kdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:45 [0m[01;34m.[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:42 [01;34m..[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:43 cubane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:45 ethane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:44 methane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:45 octane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:44 pentane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:45 propane.pdb
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:39 [01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls *.pdb
+[?2004lcubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls *.pdb-*.pdba*.pdbl*.pdb *.pdb
+[?2004l-rw-r--r-- 1 brij brij 0 Feb 20 22:43 cubane.pdb
+-rw-r--r-- 1 brij brij 0 Feb 20 22:45 ethane.pdb
+-rw-r--r-- 1 brij brij 0 Feb 20 22:44 methane.pdb
+-rw-r--r-- 1 brij brij 0 Feb 20 22:45 octane.pdb
+-rw-r--r-- 1 brij brij 0 Feb 20 22:44 pentane.pdb
+-rw-r--r-- 1 brij brij 0 Feb 20 22:45 propane.pdb
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls ?[K*and[Ke.pdb
+[?2004lcubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ touch pctane.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:46 [0m[01;34m.[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:42 [01;34m..[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:43 cubane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:45 ethane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:44 methane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:45 octane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:46 pctane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:44 pentane.pdb
+-rw-r--r-- 1 brij brij    0 Feb 20 22:45 propane.pdb
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:39 [01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls -al *[K?ctane.pdb
+[?2004l-rw-r--r-- 1 brij brij 0 Feb 20 22:45 octane.pdb
+-rw-r--r-- 1 brij brij 0 Feb 20 22:46 pctane.pdb
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls -s
+[?2004ltotal 4
+0 cubane.pdb  0 methane.pdb  0 pctane.pdb   0 propane.pdb
+0 ethane.pdb  0 octane.pdb   0 pentane.pdb  4 [0m[01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ vi [K[K[Kcd ..
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ ls -al
+[?2004ltotal 16
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:42 [0m[01;34m.[0m
+drwxr-x--- 7 brij brij 4096 Feb 20 22:38 [01;34m..[0m
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:46 [01;34mdata[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 littleWomen.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 quotes.txt
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:42 [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ vi quotes.txt 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"quotes.txt" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [18;1H~                                                                                  [19;1H~                                                                                  [20;1H~                                                                                  [21;1H~                                                                                  [22;1H~                                                                                  [23;1H~                                                                                  [24;1H~                                                                                  [25;1H~                                                                                  [26;1H~                                                                                  [27;1H~                                                                                  [28;1H~                                                                                  [29;1H~                                                                                  [30;1H~                                                                                  [31;1H~                                                                                  [32;1H~                                                                                  [33;1H~                                                                                  [34;1H~                                                                                  [35;1H~                                                                                  [36;1H~                                                                                  [37;1H~                                                                                  [38;1H~                                                                                  [39;1H~                                                                                  [40;1H~                                                                                  [41;1H~                                                                                  [42;1H~                                                                                  [m[43;66H0,0-1[9CAll[1;1H[?25h[?25l[43;56Hi[1;1H[43;56H [1;1H[43;1H[1m-- INSERT --[m[43;14H[K[43;66H0,1[11CAll[1;1H[?25h[?25li[43;66H1,2[1;2H[?25h[?25l[1;1H[K[43;68H1[1;1H[?25h[?25lT[43;68H2[1;2H[?25h[?25lh[43;68H3[1;3H[?25h[?25ls[43;68H4[1;4H[?25h[?25l[1;3H[K[43;68H3[1;3H[?25h[?25li[43;68H4[1;4H[?25h[?25ls[43;68H5[1;5H[?25h[?25l[43;68H6[1;6H[?25h[?25li[43;68H7[1;7H[?25h[?25ls[43;68H8[1;8H[?25h[?25l[43;68H9[1;9H[?25h[?25l1[43;68H10[1;10H[?25h[?25ls[43;69H1[1;11H[?25h[?25lt[43;69H2[1;12H[?25h[?25l[43;69H3[1;13H[?25h[?25ll[43;69H4[1;14H[?25h[?25li[43;69H5[1;15H[?25h[?25ln[43;69H6[1;16H[?25h[?25le[43;69H7[1;17H[?25h[?25l[43;69H8[1;18H[?25h[?25l[2;1H[K[43;66H2,1 [2;1H[?25h[?25l[3;1H[K[43;66H3[3;1H[?25h[?25l[4;1H[K[43;66H4[4;1H[?25h[?25lT[43;68H2[4;2H[?25h[?25lh[43;68H3[4;3H[?25h[?25ls[43;68H4[4;4H[?25h[?25l[4;3H[K[43;68H3[4;3H[?25h[?25li[43;68H4[4;4H[?25h[?25ls[43;68H5[4;5H[?25h[?25l[43;68H6[4;6H[?25h[?25li[43;68H7[4;7H[?25h[?25ls[43;68H8[4;8H[?25h[?25l[43;68H9[4;9H[?25h[?25lm[43;68H10[4;10H[?25h[?25li[43;69H1[4;11H[?25h[?25ld[43;69H2[4;12H[?25h[?25ld[43;69H3[4;13H[?25h[?25ll[43;69H4[4;14H[?25h[?25le[43;69H5[4;15H[?25h[?25l[43;69H6[4;16H[?25h[?25ll[43;69H7[4;17H[?25h[?25li[43;69H8[4;18H[?25h[?25ln[43;69H9[4;19H[?25h[?25le[43;68H20[4;20H[?25h[?25l[43;69H1[4;21H[?25h[?25l[5;1H[K[43;66H5,1 [5;1H[?25h[?25l[6;1H[K[43;66H6[6;1H[?25h[?25l[7;1H[K[43;66H7[7;1H[?25h[?25lT[43;68H2[7;2H[?25h[?25lh[43;68H3[7;3H[?25h[?25li[43;68H4[7;4H[?25h[?25ls[43;68H5[7;5H[?25h[?25l[43;68H6[7;6H[?25h[?25li[43;68H7[7;7H[?25h[?25ls[43;68H8[7;8H[?25h[?25l[43;68H9[7;9H[?25h[?25ll[43;68H10[7;10H[?25h[?25la[43;69H1[7;11H[?25h[?25ls[43;69H2[7;12H[?25h[?25lt[43;69H3[7;13H[?25h[?25l[43;69H4[7;14H[?25h[?25lt[43;69H5[7;15H[?25h[?25li[43;69H6[7;16H[?25h[?25lm[43;69H7[7;17H[?25h[?25l[7;16H[K[43;69H6[7;16H[?25h[?25l[7;15H[K[43;69H5[7;15H[?25h[?25l[7;14H[K[43;69H4[7;14H[?25h[?25ll[43;69H5[7;15H[?25h[?25li[43;69H6[7;16H[?25h[?25ln[43;69H7[7;17H[?25h[?25le[43;69H8[7;18H[?25h[?25l[43;69H9[7;19H[?25h[43;1H[K[7;18H[?25l[43;56H^[[7;18H[43;56H  [7;19H[43;66H7,18[10CAll[7;18H[?25h[?25l[43;56H:[7;18H[43;56H[K[43;1H:[?25hwq[?25l[?2004l[>4;m"quotes.txt" 7L, 62B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ wc -l
+[?2004l^C
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ wc -l quotes.txt 
+[?2004l7 quotes.txt
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ vi haiku.txt 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"haiku.txt" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [18;1H~                                                                                  [19;1H~                                                                                  [20;1H~                                                                                  [21;1H~                                                                                  [22;1H~                                                                                  [23;1H~                                                                                  [24;1H~                                                                                  [25;1H~                                                                                  [26;1H~                                                                                  [27;1H~                                                                                  [28;1H~                                                                                  [29;1H~                                                                                  [30;1H~                                                                                  [31;1H~                                                                                  [32;1H~                                                                                  [33;1H~                                                                                  [34;1H~                                                                                  [35;1H~                                                                                  [36;1H~                                                                                  [37;1H~                                                                                  [38;1H~                                                                                  [39;1H~                                                                                  [40;1H~                                                                                  [41;1H~                                                                                  [42;1H~                                                                                  [m[43;66H0,0-1[9CAll[1;1H[?25h[?25l[43;56Hi[1;1H[43;56H [1;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;66H0,1[11CAll[1;1H[?25h[34m^[?25l[m[43;56H^V[1;1H[?25h [?25l[43;56H  [1;1Hls
+ks :: command not found [2;25H[K[3;1Hpwd [3;5H[K[4;1Hls -F [4;7H[K[5;1Hclear[5;6H[K[6;1Hls --help[6;10H[K[7;1Hman ls [7;8H[K[8;1Hls -j :: invalid option [8;25H[K[9;1Hcd ..[9;6H[K[10;1Hcd -[10;5H[K[11;1Hls -aF[11;7H[K[12;1Hls -al[12;7H[K[13;1Hcd ~  :: Move to home dir [13;27H[K[14;1Hls -s[14;6H[K[15;1Hmkdir thesis [15;14H[K[16;1Hcreate files -->> haiku.txt  LittleWomen.txt[16;45H[K[17;1Hls [17;4H[K[18;1Hmkdir -p project/data/result[18;29H[K[19;1Htouch draft.txt :: Now open in VI and write something and save it [19;67H[K[20;1Htouch my_file.txt[20;18H[K[43;66H20,18[20;18H[?25h[?25l  :: write som[43;69H32[20;32H[?25h[?25lething and remov[43;69H48[20;48H[?25h[?25le this f[43;69H56[20;56H[?25h[?25lile[21;1H[K[22;1H[K[23;1Hc[23;2H[K[43;67H3,2 [23;2H[?25h[?25ld ~/De[43;69H8[23;8H[?25h[?25lsktop/sh[43;69H16[23;16H[?25h[?25lell-less[43;69H24[23;24H[?25h[?25lon-data/exercise-data/writing
+mv thesis/draft.txt thesis/quotes.txt[24;38H[K[25;1Hls thesis[25;10H[K[26;1Hcp command[26;11H[K[27;1Hcp -r command[27;14H[K[28;1H[K[29;1H[K[43;67H9,1 [29;1H[?25h[?25lwildcard[43;69H9[29;9H[?25h[?25l ____[43;69H14[29;14H[?25h[?25l________[43;69H22[29;22H[?25h[?25l____[43;70H6[29;26H[?25h[?25l____[43;69H30[29;30H[?25h[?25l________[43;70H8[29;38H[?25h[?25l________[43;69H46[29;46H[?25h[?25l_[30;1H[K[31;1Hsho[31;4H[K[43;66H31,4 [31;4H[?25h[?25lw use of[43;69H12[31;12H[?25h[?25l * and[43;70H9[31;19H[?25h[?25l? chara[43;69H26[31;26H[?25h[?25lcters {[43;69H33[31;33H[?25h[?25lls, cp, mv}
+cubane.pdb    methane.pdb    pentane.pdb[32;41H[K[33;1Hethane.pdb    octane.pdb     propa[33;35H[K[43;67H3,35[33;35H[?25h[?25lne.pdb[34;1H[K[35;1Hwc [35;4H[K[36;1Hwc +[36;5H[K[43;67H6,5 [36;5H[?25h[?25l wildcard
+wc -l[37;6H[K[43;67H7,6[37;6H[?25h[?25l *.pdb[43;69H13[37;13H[?25h[?25l>  leng[43;69H20[37;20H[?25h[?25l[1;42r[42;1H
+[1;43r[36;20Hth.txt
+less {b for back[37;17H[K[42;1H[94m~                                                                                  [m[43;66H[K[43;66H38,17[9CBot[37;17Hword, space for[43;69H33[37;33H[?25h[?25lforward,[43;69H41[37;41H[?25h[?25l q for q[43;70H9[37;49H[?25h[?25l[1;42r[42;1H
+[1;43r[36;49Huit}[37;1H[K[38;1Hs[38;2H[K[42;1H[94m~                                                                                  [m[43;66H[K[43;66H40,2[10CBot[38;2H[?25h[?25lort
+   [39;4H[K[43;67H1,4[39;4H[?25h[?25l-- creat[43;69H12[39;12H[?25h[?25l[1;42r[42;1H
+[1;43r[38;12He file and have some no there
+   -- now run --> sort -n filename[39;35H[K[40;1H   [40;4H[K[41;1Hhead  -n 5 filename[41;20H[K[42;1Huse o[43;66H[K[43;66H45,6[10CBot[42;6Hf >> t[43;69H12[42;12H[?25h[?25l[1;42r[1;1H[2M[1;43r[40;12Ho append data[43;66H[K[43;66H47,1[10CBot[42;1Hsort -n[43;69H9[42;9H[?25h[?25llengths.[43;69H17[42;17H[?25h[?25ltxt | head -n 1[43;69H32[42;32H[?25h[?25l :: R[43;70H7[42;37H[?25h[?25lunning m[43;69H45[42;45H[?25h[?25lultiple command at one g[43;69H69[42;69H[?25h[?25l[1;42r[42;1H
+[1;43r[41;69Ho
+wc -l *.pdb | sort[43;66H[K[43;66H48,20[9CBot[42;20H[?25h[?25l[1;42r[1;1H[6M[1;43r[36;20H-n ::    Running multiple command at one go
+wc -l *.pdb | sort -n | head -n 1[43;66H[K[43;66H54,1[10CBot[42;1H[?25h[?25l:[43;69H2[42;2H[?25h[?25lw[43;69H3[42;3H[?25h[?25lq[43;69H4[42;4H[?25h[?25l[1;42r[42;1H
+[1;43r[43;66H[K[43;66H55,1[10CBot[42;1H[?25h[?25l[1;42r[42;1H
+[1;43r[43;66H[K[43;66H56,1[10CBot[42;1H[?25h[43;1H[K[42;1H[?25l[43;56H^[[42;1H[43;56H  [42;1H[43;66H56,0-1[8CBot[42;1H[?25h[?25l[43;56H:[42;1H[43;56H[K[43;1H:[?25hwq[?25l[?2004l[>4;m"haiku.txt" 56L, 1085B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ less haiku.txt 
+[?2004l[?1049h[22;0;0t[?1h=ls 
+ks :: command not found 
+pwd 
+ls -F 
+clear
+ls --help
+man ls 
+ls -j :: invalid option 
+cd ..
+cd -
+ls -aF
+ls -al
+cd ~  :: Move to home dir 
+ls -s
+mkdir thesis 
+create files -->> haiku.txt  LittleWomen.txt
+ls 
+mkdir -p project/data/result
+touch draft.txt :: Now open in VI and write something and save it 
+touch my_file.txt  :: write something and remove this file 
+
+
+cd ~/Desktop/shell-lesson-data/exercise-data/writing
+mv thesis/draft.txt thesis/quotes.txt
+ls thesis
+cp command
+cp -r command
+
+wildcard _____________________________________
+
+show use of * and ? characters {ls, cp, mv}
+cubane.pdb    methane.pdb    pentane.pdb
+ethane.pdb    octane.pdb     propane.pdb
+
+wc 
+wc + wildcard
+wc -l *.pdb >  length.txt
+less {b for backword, space for forward, q for quit}
+
+sort 
+   -- create file and have some no there 
+   -- now run --> sort -n filename
+[7mhaiku.txt[27m[K[K [KESCESC[K[[[K66[K~~[K   
+head  -n 5 filename
+use of >> to append data 
+
+sort -n lengths.txt | head -n 1 :: Running multiple command at one go 
+wc -l *.pdb | sort -n ::    Running multiple command at one go 
+wc -l *.pdb | sort -n | head -n 1
+
+   
+
+
+:wq
+
+
+[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K55[K~~[K[HMls -s
+[HMcd ~  :: Move to home dir 
+[HMls -al
+[HMls -aF
+[HMcd -
+[HMcd ..
+[HMls -j :: invalid option 
+[HMman ls 
+[HMls --help
+[HMclear
+[HMls -F 
+[HMpwd 
+[HMks :: command not found 
+[HMls 
+[43;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [K::[Kww[K:[K[K[?1l>[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ touch sort.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ nao[Kno sort.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;35H(B[0;7m[ Reading... ](B[m[41;34H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 6.2                          sort.txt                                   [1;82H(B[m[42d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[43d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;50H(B[0;7m*[82G(B[m[?12l[?25h[2d1[?25l[?12l[?25h2[?25l[3d[?12l[?25h[?25l[?12l[?25h3[?25l[?12l[?25h2[?25l[4d[?12l[?25h[?25l[?12l[?25h4[?25l[?12l[?25h3[?25l[5d[?12l[?25h[?25l[?12l[?25h2[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h4[?25l[7d[?12l[?25h[?25l[?12l[?25h5[?25l[?12l[?25h3[?25l[?12l[?25h4[?25l[8d[?12l[?25h[?25l[41d[K[?12l[?25h[8d3[?25l[?12l[?25h4[?25l[?12l[?25h3[?25l[9d[?12l[?25h[?25l[?12l[?25h3[?25l[?12l[?25h4[?25l[41d(B[0;7mSave modified buffer?                                                              [42;1H Y(B[m Yes[K[43d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[41;23H[?12l[?25h[?25l[42d(B[0;7m^G(B[m Help[42;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[42;61H(B[0;7mM-B(B[m Backup File[43d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[43;61H(B[0;7m^T(B[m Browse[41d(B[0;7mFile Name to Write: sort.txt(B[m[?12l[?25h[?25l[34G[1K (B[0;7m[ Writing... ](B[m[K[1;50H(B[0;7m [82G(B[m[41;34H(B[0;7m[ Wrote 8 lines ](B[m[J[43d[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cat sort.txt 
+[?2004l12
+32
+43
+2
+4
+534
+343
+34
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ sort -n sort.txt 
+[?2004l2
+4
+12
+32
+34
+43
+343
+534
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ head -n 5 sort.txt 
+[?2004l12
+32
+43
+2
+4
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cat append.txt
+[?2004lcat: append.txt: No such file or directory
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ touch append.txt
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ echo 'This is line 1' ?[K> append.txt 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cat append.txt 
+[?2004lThis is line 1
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ echo 'This is line 2' >> append.txt 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cat [K[K[Kat append.txt 
+[?2004lThis is line 1
+This is line 2
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cat append.txt  | wc -l
+[?2004l2
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cd [K[K[Kls 
+[?2004lappend.txt  [0m[01;34mdata[0m  haiku.txt  littleWomen.txt  quotes.txt  sort.txt  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ ls -al
+[?2004ltotal 32
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:50 [0m[01;34m.[0m
+drwxr-x--- 8 brij brij 4096 Feb 20 22:49 [01;34m..[0m
+-rw-r--r-- 1 brij brij   30 Feb 20 22:51 append.txt
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:46 [01;34mdata[0m
+-rw-r--r-- 1 brij brij 1085 Feb 20 22:48 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 littleWomen.txt
+-rw-r--r-- 1 brij brij   62 Feb 20 22:47 quotes.txt
+-rw-r--r-- 1 brij brij   24 Feb 20 22:50 sort.txt
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:42 [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cd thesis/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/project/thesis[00m$ ls -al
+[?2004ltotal 8
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:42 [0m[01;34m.[0m
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:50 [01;34m..[0m
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 littleWomen.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 quotes.txt
+[?2004h]0;brij@TIGER01229: ~/project/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/project/thesis[00m$ wc -l[K[K[K[K[Kcd ..
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ ls -al
+[?2004ltotal 32
+drwxr-xr-x 4 brij brij 4096 Feb 20 22:50 [0m[01;34m.[0m
+drwxr-x--- 8 brij brij 4096 Feb 20 22:49 [01;34m..[0m
+-rw-r--r-- 1 brij brij   30 Feb 20 22:51 append.txt
+drwxr-xr-x 3 brij brij 4096 Feb 20 22:46 [01;34mdata[0m
+-rw-r--r-- 1 brij brij 1085 Feb 20 22:48 haiku.txt
+-rw-r--r-- 1 brij brij    0 Feb 20 22:42 littleWomen.txt
+-rw-r--r-- 1 brij brij   62 Feb 20 22:47 quotes.txt
+-rw-r--r-- 1 brij brij   24 Feb 20 22:50 sort.txt
+drwxr-xr-x 2 brij brij 4096 Feb 20 22:42 [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cd ..
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls 
+[?2004l[0m[01;34m'=p'[0m   [01;34mDesktop[0m   [01;34mbin[0m   hello.txt   muUnixSession   [01;34mproject[0m   [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd thesis/
+[?2004l[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ ls 
+[?2004lhaiku.txt  littleWomen.txt  quotes.txt
+[?2004h]0;brij@TIGER01229: ~/thesis[01;32mbrij@TIGER01229[00m:[01;34m~/thesis[00m$ cd ..
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls 
+[?2004l[0m[01;34m'=p'[0m   [01;34mDesktop[0m   [01;34mbin[0m   hello.txt   muUnixSession   [01;34mproject[0m   [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls project/
+[?2004lappend.txt  [0m[01;34mdata[0m  haiku.txt  littleWomen.txt  quotes.txt  sort.txt  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ \\[K[K
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls kdata[1Pdata
+[?2004lls: cannot access 'data': No such file or directory
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls data[C[C[C[C[C/
+[?2004lls: cannot access 'data/': No such file or directory
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34m'=p'[0m   [01;34mDesktop[0m   [01;34mbin[0m   hello.txt   muUnixSession   [01;34mproject[0m   [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd project/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ ls
+[?2004lappend.txt  [0m[01;34mdata[0m  haiku.txt  littleWomen.txt  quotes.txt  sort.txt  [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~/project[01;32mbrij@TIGER01229[00m:[01;34m~/project[00m$ cd data/
+[?2004l[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ ls
+[?2004lcubane.pdb  methane.pdb  pctane.pdb   propane.pdb
+ethane.pdb  octane.pdb   pentane.pdb  [0m[01;34mresult[0m
+[?2004h]0;brij@TIGER01229: ~/project/data[01;32mbrij@TIGER01229[00m:[01;34m~/project/data[00m$ cd ~
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mkdir exercise-data
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd exercise-data/
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data[00m$ mkdir creatures
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data[00m$ cd creatures/
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ touch basilisk.dat, minotaur.dat, and unicorn.dat[1Punicorn.dat[1Punicorn.dat[1Punicorn.dat[1Punicorn.dat[1Punicorn.dat[1Punicorn.dat unicorn.dat[1P
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  unicorn.dat
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ vi basilisk.dat 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"basilisk.dat" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                      [3;1H~                                                                                                      [4;1H~                                                                                                      [5;1H~                                                                                                      [6;1H~                                                                                                      [7;1H~                                                                                                      [8;1H~                                                                                                      [9;1H~                                                                                                      [10;1H~                                                                                                      [11;1H~                                                                                                      [12;1H~                                                                                                      [13;1H~                                                                                                      [14;1H~                                                                                                      [15;1H~                                                                                                      [16;1H~                                                                                                      [17;1H~                                                                                                      [18;1H~                                                                                                      [19;1H~                                                                                                      [20;1H~                                                                                                      [21;1H~                                                                                                      [22;1H~                                                                                                      [23;1H~                                                                                                      [24;1H~                                                                                                      [25;1H~                                                                                                      [26;1H~                                                                                                      [27;1H~                                                                                                      [28;1H~                                                                                                      [29;1H~                                                                                                      [30;1H~                                                                                                      [31;1H~                                                                                                      [32;1H~                                                                                                      [33;1H~                                                                                                      [34;1H~                                                                                                      [35;1H~                                                                                                      [36;1H~                                                                                                      [37;1H~                                                                                                      [38;1H~                                                                                                      [39;1H~                                                                                                      [40;1H~                                                                                                      [41;1H~                                                                                                      [42;1H~                                                                                                      [m[43;86H0,0-1[9CAll[1;1H[?25h[?25l[43;76Hi[1;1H[43;76H [1;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;86H0,1[11CAll[1;1H[?25h[?25lS[43;86H1,2[1;2H[?25h[?25lp[43;88H3[1;3H[?25h[?25le[43;88H4[1;4H[?25h[?25lc[43;88H5[1;5H[?25h[?25li[43;88H6[1;6H[?25h[?25le[43;88H7[1;7H[?25h[?25ls[43;88H8[1;8H[?25h[?25l[43;88H9[1;9H[?25h[?25ln[43;88H10[1;10H[?25h[?25la[43;89H1[1;11H[?25h[?25lm[43;89H2[1;12H[?25h[?25le[43;89H3[1;13H[?25h[?25l[43;89H4[1;14H[?25h[?25l:[43;89H5[1;15H[?25h[?25l[43;89H6[1;16H[?25h[?25lG[43;89H7[1;17H[?25h[?25l[1;16H[K[43;89H6[1;16H[?25h[?25lD[43;89H7[1;17H[?25h[?25lo[43;89H8[1;18H[?25h[?25lg[43;89H9[1;19H[?25h[?25l[43;88H20[1;20H[?25h[?25l[2;1H[K[43;86H2,1 [2;1H[?25h[?25lC[43;88H2[2;2H[?25h[?25ll[43;88H3[2;3H[?25h[?25la[43;88H4[2;4H[?25h[?25ls[43;88H5[2;5H[?25h[?25ls[43;88H6[2;6H[?25h[?25li[43;88H7[2;7H[?25h[?25lf[43;88H8[2;8H[?25h[?25li[43;88H9[2;9H[?25h[?25lc[43;88H10[2;10H[?25h[?25la[43;89H1[2;11H[?25h[?25lt[43;89H2[2;12H[?25h[?25li[43;89H3[2;13H[?25h[?25lo[43;89H4[2;14H[?25h[?25ln[43;89H5[2;15H[?25h[?25l[43;89H6[2;16H[?25h[?25l:[43;89H7[2;17H[?25h[?25l[43;89H8[2;18H[?25h[?25lM[43;89H9[2;19H[?25h[?25la[43;88H20[2;20H[?25h[?25lm[43;89H1[2;21H[?25h[?25la[43;89H2[2;22H[?25h[?25ll[43;89H3[2;23H[?25h[?25l[3;1H[K[43;86H3,1 [3;1H[?25h[?25lC[43;88H2[3;2H[?25h[?25la[43;88H3[3;3H[?25h[?25lt[43;88H4[3;4H[?25h[?25le[43;88H5[3;5H[?25h[?25lg[43;88H6[3;6H[?25h[?25lo[43;88H7[3;7H[?25h[?25lr[43;88H8[3;8H[?25h[?25ly[43;88H9[3;9H[?25h[?25l[43;88H10[3;10H[?25h[?25l:[43;89H1[3;11H[?25h[?25l[43;89H2[3;12H[?25h[?25lr[43;89H3[3;13H[?25h[?25la[43;89H4[3;14H[?25h[?25ln[43;89H5[3;15H[?25h[?25ld[43;89H6[3;16H[?25h[?25lo[43;89H7[3;17H[?25h[?25lm[43;89H8[3;18H[?25h[?25l[4;1H[K[43;86H4,1 [4;1H[?25h[?25lG[43;88H2[4;2H[?25h[?25le[43;88H3[4;3H[?25h[?25lo[43;88H4[4;4H[?25h[?25lL[43;88H5[4;5H[?25h[?25lo[43;88H6[4;6H[?25h[?25lc[43;88H7[4;7H[?25h[?25la[43;88H8[4;8H[?25h[?25lt[43;88H9[4;9H[?25h[?25lo[43;88H10[4;10H[?25h[?25l[4;9H[K[43;88H9 [4;9H[?25h[?25li[43;88H10[4;10H[?25h[?25lo[43;89H1[4;11H[?25h[?25ln[43;89H2[4;12H[?25h[?25l[43;89H3[4;13H[?25h[?25l:[43;89H4[4;14H[?25h[?25l[43;89H5[4;15H[?25h[?25lE[43;89H6[4;16H[?25h[?25lu[43;89H7[4;17H[?25h[?25lr[43;89H8[4;18H[?25h[?25lo[43;89H9[4;19H[?25h[?25lp[43;88H20[4;20H[?25h[?25le[43;89H1[4;21H[?25h[43;1H[K[4;20H[?25l[43;76H^[[4;20H[43;76H  [4;21H[43;86H4,20[10CAll[4;20H[?25h[?25l[43;76H:[4;20H[43;76H[K[43;1H:[?25hwq[?25l[?2004l[>4;m"basilisk.dat" 4L, 82B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cat basilisk.dat 
+[?2004lSpecies name : Dog 
+Classification : Mamal
+Category : random
+GeoLocation : Europe
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ vi minotaur.dat 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"minotaur.dat" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                      [3;1H~                                                                                                      [4;1H~                                                                                                      [5;1H~                                                                                                      [6;1H~                                                                                                      [7;1H~                                                                                                      [8;1H~                                                                                                      [9;1H~                                                                                                      [10;1H~                                                                                                      [11;1H~                                                                                                      [12;1H~                                                                                                      [13;1H~                                                                                                      [14;1H~                                                                                                      [15;1H~                                                                                                      [16;1H~                                                                                                      [17;1H~                                                                                                      [18;1H~                                                                                                      [19;1H~                                                                                                      [20;1H~                                                                                                      [21;1H~                                                                                                      [22;1H~                                                                                                      [23;1H~                                                                                                      [24;1H~                                                                                                      [25;1H~                                                                                                      [26;1H~                                                                                                      [27;1H~                                                                                                      [28;1H~                                                                                                      [29;1H~                                                                                                      [30;1H~                                                                                                      [31;1H~                                                                                                      [32;1H~                                                                                                      [33;1H~                                                                                                      [34;1H~                                                                                                      [35;1H~                                                                                                      [36;1H~                                                                                                      [37;1H~                                                                                                      [38;1H~                                                                                                      [39;1H~                                                                                                      [40;1H~                                                                                                      [41;1H~                                                                                                      [42;1H~                                                                                                      [m[43;86H0,0-1[9CAll[1;1H[?25h[?25l[43;76Hi[1;1H[43;76H [1;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;86H0,1[11CAll[1;1H[?25h[34m^[?25l[m[43;76H^V[1;1H[?25h[?25l[43;78H^V[1;1H [43;76H    [1;1H[34m^V[m[43;86H1,2-3[1;3H[?25h[?25l[1;1H[K[43;88H1  [1;1H[?25h[?25lSpecies name :[43;89H5[1;15H[?25h[?25l Dog
+Classific[2;10H[K[43;86H2,10[2;10H[?25h[?25lation :[43;89H7[2;17H[?25h[?25l Mamal
+Category : ran[3;15H[K[43;86H3,15[3;15H[?25h[?25ldom
+GeoLocatio[4;11H[K[43;86H4,11[4;11H[?25h[?25ln : Eu[43;89H7[4;17H[?25h[?25lrope[43;88H21[4;21H[?25h[?25l[43;86H3,18[3;18H[?25h[?25l[43;86H2,21[2;21H[?25h[?25l[43;86H1,19[1;19H[?25h[?25l[1;18H[K[43;89H8[1;18H[?25h[?25l[1;17H[K[43;89H7[1;17H[?25h[?25l[1;16H[K[43;89H6[1;16H[?25h[?25lC[43;89H7[1;17H[?25h[?25la[43;89H8[1;18H[?25h[?25lt[43;89H9[1;19H[?25h[?25l[43;86H2[2;19H[?25h[?25l[43;88H20[2;20H[?25h[?25l[43;89H1[2;21H[?25h[?25l[43;89H2[2;22H[?25h[?25l[43;89H3[2;23H[?25h[?25lV[43;89H4[2;24H[?25h[?25l2[43;89H5[2;25H[?25h[?25l[43;86H3,18[3;18H[?25h[?25lV[43;89H9[3;19H[?25h[?25l2[43;88H20[3;20H[?25h[?25l[43;86H4[4;20H[?25h[?25l[43;89H1[4;21H[?25h[?25l[4;20H[K[43;89H0[4;20H[?25h[?25l[4;19H[K[43;88H19[4;19H[?25h[?25l[4;18H[K[43;89H8[4;18H[?25h[?25l[4;17H[K[43;89H7[4;17H[?25h[?25l[4;16H[K[43;89H6[4;16H[?25h[?25l[4;15H[K[43;89H5[4;15H[?25h[?25lA[43;89H6[4;16H[?25h[?25ls[43;89H7[4;17H[?25h[?25lh[43;89H8[4;18H[?25h[?25l[4;17H[K[43;89H7[4;17H[?25h[?25li[43;89H8[4;18H[?25h[?25la[43;89H9[4;19H[?25h[43;1H[K[4;18H[?25l[43;76H^[[4;18H[43;76H  [4;19H[43;86H4,18[10CAll[4;18H[?25h[?25l[43;76H:[4;18H[43;76H[K[43;1H:[?25hwq[?25l[?2004l[>4;m"minotaur.dat" 4L, 83B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ vi unicorn.dat 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"unicorn.dat" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                      [3;1H~                                                                                                      [4;1H~                                                                                                      [5;1H~                                                                                                      [6;1H~                                                                                                      [7;1H~                                                                                                      [8;1H~                                                                                                      [9;1H~                                                                                                      [10;1H~                                                                                                      [11;1H~                                                                                                      [12;1H~                                                                                                      [13;1H~                                                                                                      [14;1H~                                                                                                      [15;1H~                                                                                                      [16;1H~                                                                                                      [17;1H~                                                                                                      [18;1H~                                                                                                      [19;1H~                                                                                                      [20;1H~                                                                                                      [21;1H~                                                                                                      [22;1H~                                                                                                      [23;1H~                                                                                                      [24;1H~                                                                                                      [25;1H~                                                                                                      [26;1H~                                                                                                      [27;1H~                                                                                                      [28;1H~                                                                                                      [29;1H~                                                                                                      [30;1H~                                                                                                      [31;1H~                                                                                                      [32;1H~                                                                                                      [33;1H~                                                                                                      [34;1H~                                                                                                      [35;1H~                                                                                                      [36;1H~                                                                                                      [37;1H~                                                                                                      [38;1H~                                                                                                      [39;1H~                                                                                                      [40;1H~                                                                                                      [41;1H~                                                                                                      [42;1H~                                                                                                      [m[43;86H0,0-1[9CAll[1;1H[?25h[?25l[43;76Hi[1;1H[43;76H [1;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;86H0,1[11CAll[1;1H[?25h[?25lSpecies[43;86H1,8[1;8H[?25h[?25l name :[43;88H15[1;15H[?25h[?25l Dog
+C[2;2H[K[43;86H2,2 [2;2H[?25h[?25llassification : Mamal[3;1H[K[43;86H3,1[3;1H[?25h[?25lCategor[43;88H8[3;8H[?25h[?25ly : random
+GeoLocatio[4;11H[K[43;86H4,11[4;11H[?25h[?25ln : Europe[43;88H2[4;21H[?25h[?25l[43;86H3,18[3;18H[?25h[?25l[43;86H2,21[2;21H[?25h[?25l[43;86H1,19[1;19H[?25h[?25l[1;18H[K[43;89H8[1;18H[?25h[?25l[1;17H[K[43;89H7[1;17H[?25h[?25l[1;16H[K[43;89H6[1;16H[?25h[?25lU[43;89H7[1;17H[?25h[?25ln[43;89H8[1;18H[?25h[?25li[43;89H9[1;19H[?25h[?25lc[43;88H20[1;20H[?25h[?25lo[43;89H1[1;21H[?25h[?25lr[43;89H2[1;22H[?25h[?25ln[43;89H3[1;23H[?25h[?25l[43;86H2[2;23H[?25h[?25l[2;22H[K[43;89H2[2;22H[?25h[?25l[2;21H[K[43;89H1[2;21H[?25h[?25l[2;20H[K[43;89H0[2;20H[?25h[?25l[2;19H[K[43;88H19[2;19H[?25h[?25l[2;18H[K[43;89H8[2;18H[?25h[?25lD[43;89H9[2;19H[?25h[?25li[43;88H20[2;20H[?25h[?25lf[43;89H1[2;21H[?25h[?25lf[43;89H2[2;22H[?25h[?25le[43;89H3[2;23H[?25h[?25lr[43;89H4[2;24H[?25h[?25le[43;89H5[2;25H[?25h[?25ln[43;89H6[2;26H[?25h[?25lt[43;89H7[2;27H[?25h[?25l[43;89H8[2;28H[?25h[?25l[43;86H3,1[3;18H[?25h[?25l[3;17H[K[43;89H7[3;17H[?25h[?25l[3;16H[K[43;89H6[3;16H[?25h[?25l[3;15H[K[43;89H5[3;15H[?25h[?25l[3;14H[K[43;89H4[3;14H[?25h[?25l[3;13H[K[43;89H3[3;13H[?25h[?25l[3;12H[K[43;89H2[3;12H[?25h[?25lA[43;89H3[3;13H[?25h[?25lc[43;89H4[3;14H[?25h[?25ld[43;89H5[3;15H[?25h[?25lF[43;89H6[3;16H[?25h[?25lx[43;89H7[3;17H[?25h[?25ld[43;89H8[3;18H[?25h[?25l[43;86H4[4;18H[?25h[?25l[43;89H9[4;19H[?25h[?25l[43;88H20[4;20H[?25h[?25l[43;89H1[4;21H[?25h[?25l[4;20H[K[43;89H0[4;20H[?25h[?25l[4;19H[K[43;88H19[4;19H[?25h[?25l[4;18H[K[43;89H8[4;18H[?25h[?25l[4;17H[K[43;89H7[4;17H[?25h[?25l[4;16H[K[43;89H6[4;16H[?25h[?25l[4;15H[K[43;89H5[4;15H[?25h[?25lA[43;89H6[4;16H[?25h[?25l[4;15H[K[43;89H5[4;15H[?25h[?25lU[43;89H6[4;16H[?25h[?25lS[43;89H7[4;17H[?25h[43;1H[K[4;16H[?25l[43;76H^[[4;16H[43;76H  [4;17H[43;86H4,16[10CAll[4;16H[?25h[?25l[43;76H:[4;16H[43;76H[K[43;1H:[?25hwq[?25l[?2004l[>4;m"unicorn.dat" 4L, 86B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ head -2 basilisk.dat minotaur.dat  unicorn.dat 
+[?2004l==> basilisk.dat <==
+Species name : Dog 
+Classification : Mamal
+
+==> minotaur.dat <==
+Species name : Cat
+Classification : MamalV2
+
+==> unicorn.dat <==
+Species name : Unicorn
+Classification : Different 
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ head -2 basilisk.dat minotaur.dat  unicorn.dat [1@|[1@ [1@t[1@a[1@i[1@l[1@ [1@1[1@ 
+[?2004ltail: cannot open '1' for reading: No such file or directory
+==> basilisk.dat <==
+Species name : Dog 
+Classification : Mamal
+Category : random
+GeoLocation : Europe
+
+==> minotaur.dat <==
+Species name : Cat
+Classification : MamalV2
+Category : randomV2
+GeoLocation : Asia
+
+==> unicorn.dat <==
+Species name : Unicorn
+Classification : Different 
+Category : AcdFxd
+GeoLocation : US
+^C
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ [K]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ for file in basilisk.dat minotaur.dat unicorn.dat 
+[?2004l[?2004h> do
+[?2004l[?2004h> echo $file
+[?2004l[?2004h> head -n 2 | tail -n 1 
+[?2004l[?2004h> done
+[?2004lbasilisk.dat
+
+done
+done
+minotaur.dat
+dn d one
+exit
+exit
+unicorn.dat
+^C
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cat[K[K[Kvi s[KscriptBin.sh
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"scriptBin.sh" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                [3;1H~                                                                                                [4;1H~                                                                                                [5;1H~                                                                                                [6;1H~                                                                                                [7;1H~                                                                                                [8;1H~                                                                                                [9;1H~                                                                                                [10;1H~                                                                                                [11;1H~                                                                                                [12;1H~                                                                                                [13;1H~                                                                                                [14;1H~                                                                                                [15;1H~                                                                                                [16;1H~                                                                                                [17;1H~                                                                                                [18;1H~                                                                                                [19;1H~                                                                                                [20;1H~                                                                                                [21;1H~                                                                                                [22;1H~                                                                                                [23;1H~                                                                                                [24;1H~                                                                                                [25;1H~                                                                                                [26;1H~                                                                                                [27;1H~                                                                                                [28;1H~                                                                                                [29;1H~                                                                                                [m[30;80H0,0-1[9CAll[1;1H[?25h[?25l[30;70Hi[1;1H[30;70H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;80H0,1[11CAll[1;1H[?25h[?25l[34m#[m[30;80H1,2[1;2H[?25h[?25l[34m![m[30;82H3[1;3H[?25h[?25l[34m [m[30;82H4[1;4H[?25h[?25l[34mb[m[30;82H5[1;5H[?25h[?25l[34mi[m[30;82H6[1;6H[?25h[?25l[34mn[m[30;82H7[1;7H[?25h[?25l[34m/[m[30;82H8[1;8H[?25h[?25l[34mb[m[30;82H9[1;9H[?25h[?25l[34ma[m[30;82H10[1;10H[?25h[?25l[34ms[m[30;83H1[1;11H[?25h[?25l[34mh[m[30;83H2[1;12H[?25h[?25l[2;1H[K[30;80H2,1 [2;1H[?25h[?25lf[30;82H2[2;2H[?25h[?25lo[30;82H3[2;3H[?25h[?25l[38;5;130mfor[m[30;82H4[2;4H[?25h[?25l[30;82H5[2;5H[?25h[?25lf[30;82H6[2;6H[?25h[?25l[97m[101mfi[m[30;82H7[2;7H[?25h[?25lfil[30;82H8[2;8H[?25h[?25le[30;82H9[2;9H[?25h[?25ln[30;82H10[2;10H[?25h[?25la[30;83H1[2;11H[?25h[?25lm[30;83H2[2;12H[?25h[?25le[30;83H3[2;13H[?25h[?25l[30;83H4[2;14H[?25h[?25li[30;83H5[2;15H[?25h[?25l[38;5;130min[m[30;83H6[2;16H[?25h[?25l[30;83H7[2;17H[?25h[?25lb[30;83H8[2;18H[?25h[?25la[30;83H9[2;19H[?25h[?25ls[30;82H20[2;20H[?25h[?25li[30;83H1[2;21H[?25h[?25l[30;83H2-25[2;25H[?25h[?25l[30;83H1   [2;21H[?25h[?25l[2;20H[K[30;83H0[2;20H[?25h[?25l[2;19H[K[30;82H19[2;19H[?25h[?25l[2;18H[K[30;83H8[2;18H[?25h[?25l[2;17H[K[30;83H7[2;17H[?25h[?25lb[30;83H8[2;18H[?25h[?25la[30;83H9[2;19H[?25h[?25ls[30;82H20[2;20H[?25h[?25li[30;83H1[2;21H[?25h[?25l[2;20H[K[30;83H0[2;20H[?25h[30;1H[K[2;19H[?25l[30;70H^[[2;19H[30;70H  [2;20H[30;80H2,19[10CAll[2;19H[?25h[?25l[30;70H:[2;19H[30;70H[K[30;1H:[?25hwq[?25l[?2004l[>4;m"scriptBin.sh" [New] 2L, 32B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  scriptBin.sh  unicorn.dat
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ lsvi scriptBin.sh
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"scriptBin.sh" 2L, 32B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[34m#! bin/bash[m
+[38;5;130mfor[m filename [38;5;130min[m bas[2;20H[K[3;1H[94m~                                                                                                [4;1H~                                                                                                [5;1H~                                                                                                [6;1H~                                                                                                [7;1H~                                                                                                [8;1H~                                                                                                [9;1H~                                                                                                [10;1H~                                                                                                [11;1H~                                                                                                [12;1H~                                                                                                [13;1H~                                                                                                [14;1H~                                                                                                [15;1H~                                                                                                [16;1H~                                                                                                [17;1H~                                                                                                [18;1H~                                                                                                [19;1H~                                                                                                [20;1H~                                                                                                [21;1H~                                                                                                [22;1H~                                                                                                [23;1H~                                                                                                [24;1H~                                                                                                [25;1H~                                                                                                [26;1H~                                                                                                [27;1H~                                                                                                [28;1H~                                                                                                [29;1H~                                                                                                [m[30;80H2,19[10CAll[2;19H[?25h[?25l[30;70Hi[2;19H[30;70H [2;19H[30;1H[1m-- INSERT --[m[30;13H[K[30;80H2,19[10CAll[2;19H[?25h[?25l[30;82H20[2;20H[?25h[?25li[30;83H1[2;21H[?25h[?25ll[30;83H2[2;22H[?25h[?25li[30;83H3[2;23H[?25h[?25ls[30;83H4[2;24H[?25h[?25lj[30;83H5[2;25H[?25h[?25l[2;24H[K[30;83H4[2;24H[?25h[?25lk[30;83H5[2;25H[?25h[?25l.[30;83H6[2;26H[?25h[?25ld[30;83H7[2;27H[?25h[?25la[30;83H8[2;28H[?25h[?25lt[30;83H9[2;29H[?25h[?25l[30;82H30[2;30H[?25h[?25lu[30;83H1[2;31H[?25h[?25ln[30;83H2[2;32H[?25h[?25li[30;83H3[2;33H[?25h[?25lc[30;83H4[2;34H[?25h[?25lo[30;83H5[2;35H[?25h[?25lr[30;83H6[2;36H[?25h[?25ln[30;83H7[2;37H[?25h[?25l.[30;83H8[2;38H[?25h[?25ld[30;83H9[2;39H[?25h[?25la[30;82H40[2;40H[?25h[?25lt[30;83H1[2;41H[?25h[?25l
+        [3;9H[K[30;80H3,2-9[3;9H[?25h[?25ld[30;82H3-10[3;10H[?25h[?25li[30;82H4-11[3;11H[?25h[?25l[30;82H5-12[3;12H[?25h[?25l[30;82H4-11[3;11H[?25h[?25l[3;10H[K[30;82H3-10[3;10H[?25h[?25l[38;5;130mdo[m[3;9H[K[30;83H   [3;3H[?25h[?25l
+        [4;9H[K[30;80H4,2-9[4;9H[?25h[?25le[30;82H3-10[4;10H[?25h[?25lc[30;82H4-11[4;11H[?25h[?25lc[30;82H5-12[4;12H[?25h[?25l[4;11H[K[30;82H4-11[4;11H[?25h[?25lh[30;82H5-12[4;12H[?25h[?25l[38;5;130mecho[m[30;82H6-13[4;13H[?25h[?25l[31m [m[30;82H7-14[4;14H[?25h[?25l[31m$[m[30;82H8-15[4;15H[?25h[?25l[35m$f[m[30;82H9-16[4;16H[?25h[?25l[35mi[m[30;82H10-17[4;17H[?25h[?25l[35ml[m[30;83H1-18[4;18H[?25h[?25l[35me[m[30;83H2-19[4;19H[?25h[?25l[35ma[m[30;83H3-20[4;20H[?25h[?25l[4;19H[K[30;83H2-19[4;19H[?25h[?25l[35mn[m[30;83H3-20[4;20H[?25h[?25l[35ma[m[30;83H4-21[4;21H[?25h[?25l[35mm[m[30;83H5-22[4;22H[?25h[?25l[35me[m[30;83H6-23[4;23H[?25h[?25l
+        [5;9H[K[30;80H5,2-9  [5;9H[?25h[?25le[30;82H3-10[5;10H[?25h[?25lc[30;82H4-11[5;11H[?25h[?25l[5;10H[K[30;82H3-10[5;10H[?25h[?25l[5;9H[K[30;82H2-9 [5;9H[?25h[?25lh[30;82H3-10[5;10H[?25h[?25le[30;82H4-11[5;11H[?25h[?25la[30;82H5-12[5;12H[?25h[?25ld[30;82H6-13[5;13H[?25h[?25l[30;82H7-14[5;14H[?25h[?25l-[30;82H8-15[5;15H[?25h[?25l[5;14H[K[30;82H7-14[5;14H[?25h[?25l[30;82H6-13[5;13H[?25h[?25l[5;12H[K[30;82H5-12[5;12H[?25h[?25l[5;11H[K[30;82H4-11[5;11H[?25h[?25l[5;10H[K[30;82H3-10[5;10H[?25h[?25l[5;9H[K[30;82H2-9 [5;9H[?25h[?25le[30;82H3-10[5;10H[?25h[?25lc[30;82H4-11[5;11H[?25h[?25lh[30;82H5-12[5;12H[?25h[?25l[38;5;130mecho[m[30;82H6-13[5;13H[?25h[?25l[31m [m[30;82H7-14[5;14H[?25h[?25l[31mh[m[30;82H8-15[5;15H[?25h[?25l[31me[m[30;82H9-16[5;16H[?25h[?25l[31ma[m[30;82H10-17[5;17H[?25h[?25l[31md[m[30;83H1-18[5;18H[?25h[?25l[31m [m[30;83H2-19[5;19H[?25h[?25l[31m-[m[30;83H3-20[5;20H[?25h[?25l[31mn[m[30;83H4-21[5;21H[?25h[?25l[31m [m[30;83H5-22[5;22H[?25h[?25l[31m2[m[30;83H6-23[5;23H[?25h[?25l[31m [m[30;83H7-24[5;24H[?25h[?25l[31m$[m[30;83H8-25[5;25H[?25h[?25l[31m [m[30;83H9-26[5;26H[?25h[?25l[31mf[m[30;82H20-27[5;27H[?25h[?25l[31mi[m[30;83H1-28[5;28H[?25h[?25l[31ml[m[30;83H2-29[5;29H[?25h[?25l[31me[m[30;83H3-30[5;30H[?25h[?25l[31mn[m[30;83H4-31[5;31H[?25h[?25l[31ma[m[30;83H5-32[5;32H[?25h[?25l[31mm[m[30;83H6-33[5;33H[?25h[?25l[31me[m[30;83H7-34[5;34H[?25h[?25l[31m [m[30;83H8-35[5;35H[?25h[?25l[38;5;130m|[m[30;83H9-36[5;36H[?25h[?25l[30;82H30-37[5;37H[?25h[?25lT[30;83H1-38[5;38H[?25h[?25la[30;83H2-39[5;39H[?25h[?25l[5;38H[K[30;83H1-38[5;38H[?25h[?25l[5;37H[K[30;83H0-37[5;37H[?25h[?25lt[30;83H1-38[5;38H[?25h[?25la[30;83H2-39[5;39H[?25h[?25li[30;83H3-40[5;40H[?25h[?25l[38;5;130mtail[m[30;83H4-41[5;41H[?25h[?25l[30;83H5-42[5;42H[?25h[?25l-[30;83H6-43[5;43H[?25h[?25l[38;5;130m-n[m[30;83H7-44[5;44H[?25h[?25l[30;83H8-45[5;45H[?25h[?25l[31m1[m[30;83H9-46[5;46H[?25h[?25l[30;82H40-47[5;47H[?25h[?25l
+        [6;9H[K[30;80H6,2-9  [6;9H[?25h[?25l[30;82H1  [6;1H[?25h[?25ld[30;82H2[6;2H[?25h[?25l[38;5;130mdo[m[30;82H3[6;3H[?25h[?25ldon[30;82H4[6;4H[?25h[?25l[38;5;130mdone[m[30;82H5[6;5H[?25h[?25l[7;1H[K[30;80H7,1[7;1H[?25h[30;1H[K[7;1H[?25l[30;70H^[[7;1H[30;70H  [7;1H[30;80H7,0-1[9CAll[7;1H[?25h[?25l[30;70H:[7;1H[30;70H[K[30;1H:[?25hwq[?25l[?2004l[>4;m"scriptBin.sh" 7L, 118B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ sc
+[?2004l	Command 'sc' not found, but can be installed with:
+sudo apt install sc
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ rscvi scriptBin.shls[Kvi scriptBin.sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscri[[KptBin.sh
+[?2004lscriptBin.sh: command not found
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cat scriptBin.sh 
+[?2004l#! bin/bash
+for filename in basilisk.dat unicorn.dat
+do
+	echo $filename
+	echo head -n 2 $ filename | tail -n 1 
+done
+
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cat scriptBin.sh [5PscriptBin.shbscriptBin.shascriptBin.sh[CscriptBin.shhscriptBin.sh scriptBin.sh
+[?2004lbasilisk.dat
+head -n 2 $ filename
+unicorn.dat
+head -n 2 $ filename
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ nanp [K[Ko scriptBin.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;42H(B[0;7m[ Reading... ](B[m[28;41H(B[0;7m[ Read 7 lines ](B[m[H(B[0;7m  GNU nano 6.2                               scriptBin.sh                                        [1;96H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[36m#! bin/bash[3d[32mfor[39m(B[m filename [32min[39m(B[m basilisk.dat unicorn.dat[4d[32mdo[5;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[31m$filename[6;9H[34mecho[39m(B[m (B[0;1m[34mhead[35m -n[39m(B[m 2 [32m$[39m(B[m filename [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[42m [7d[49m[32mdone[2d[39m(B[m[?12l[?25h[?25l[1;59H(B[0;7m*[96G(B[m[?12l[?25h[2di#[32m![39m(B[m bin/bashi[?25l[?12l[?25h[3d[?25l[?12l[?25h[A[?25l[?12l[?25h[36m#! bin/bash[39m(B[m[K[?25l[?12l[?25h[3d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[5;9H[?25l[?12l[?25h[6d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[9Gechohead[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[28d[K[?12l[?25h[6;10H[1P[?25l[?12l[?25h(B[0;1m[34mhead[39m(B[m[1P[?25l[28d(B[0;7mSave modified buffer?                                                                            [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;18H(B[0;7mC(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;25H(B[0;7mM-D(B[m DOS Format[29;49H(B[0;7mM-A(B[m Append[29;73H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G        (B[0;7mM-M(B[m Mac Format[30;49H(B[0;7mM-P(B[m Prepend[30;73H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: scriptBin.sh(B[m[?12l[?25h[?25l[28;41H[1K (B[0;7m[ Writing... ](B[m[K[1;59H(B[0;7m [96G(B[m[28;41H(B[0;7m[ Wrote 7 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cat scriptBin.sh 
+[?2004l#! bin/bash
+for filename in basilisk.dat unicorn.dat
+do
+	echo $filename
+	head -n 2 $ filename | tail -n 1 
+done
+
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cat scriptBin.sh [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash scriptBin.shnano scriptBin.sh [1Pbash scriptBin.sh
+[?2004lbasilisk.dat
+head: cannot open '$' for reading: No such file or directory
+head: cannot open 'filename' for reading: No such file or directory
+unicorn.dat
+head: cannot open '$' for reading: No such file or directory
+head: cannot open 'filename' for reading: No such file or directory
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ for file in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> ls *.pdb
+[?2004l[?2004h> done
+[?2004lls: cannot access '*.pdb': No such file or directory
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  scriptBin.sh  unicorn.dat
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ ls[Kfor file ls[Kfor file in *.pdb; do ls *.pdb; done[19Pbash scriptBin.shfor file in *.pdb; do ls *.pdb; done[C[C[1P[1P[1P[1@d[1@a[1@t
+[?2004lbasilisk.dat  minotaur.dat  unicorn.dat
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ for file in *.pdb; do ls *.dat; done[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@w[1@c[1@-[1@l
+[?2004lwc-l: command not found
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ for file in *.pdb; do wc-l *.dat; done[1@ 
+[?2004l  4 basilisk.dat
+  4 minotaur.dat
+  4 unicorn.dat
+ 12 total
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ (reverse-i-search)`': [Kp': for file in *.[7mp[27mdb; do wc -l *.dat; done[C[8@failed reverse-i-search)`ps': for file in *.p^C[?2004l[?2004h[?2004l
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ history
+[?2004l    1  ls -al
+    2  echo "Linux distro installed"
+    3  echo 'Hello inp' > samplefile.txt
+    4  cat samplefile.txt 
+    5  vi samplefile.txt 
+    6  cat samplefile.txt 
+    7  vi samplefile.txt 
+    8  exit
+    9  echo Hi
+   10  2+3
+   11  ls -al
+   12  ls
+   13  sys
+   14  hostname
+   15  /etc/os-release
+   16  su
+   17  exit
+   18  man sudo_root
+   19  ls -al
+   20  echo run with UU
+   21  thanls
+   22  pwd
+   23  ls 
+   24  cat samplefile.txt 
+   25  exit
+   26  ls
+   27  ls -al
+   28  ks
+   29  pwd
+   30  cd /
+   31  ls -al
+   32  cd usr
+   33  ls-al
+   34  ls -al
+   35  clear
+   36  exit
+   37  pwd
+   38  cd /
+   39  ls
+   40  cd /home
+   41  ls
+   42  cd brij/
+   43  ls
+   44  script -a ~/testSession
+   45  pwd
+   46  ls
+   47  ls -al
+   48  vi  testSession 
+   49  sudo root
+   50  pwd
+   51  cd ~
+   52  ls
+   53  pwd
+   54  man script
+   55  script -a ~/unixTutorial
+   56  ls -al
+   57  mkdir bin
+   58  mv unixTutorial  testSession  bin/
+   59  ls -al
+   60  mv samplefile.txt  bin
+   61  ls -al
+   62  exit
+   63  ls
+   64  ls -al
+   65  ks
+   66  pwd
+   67  ls -F
+   68  clear
+   69  ls --help
+   70  man ls 
+   71  ls -j
+   72  cd ..
+   73  pwd
+   74  cd brij/
+   75  pwd
+   76  cd ..
+   77  pwd
+   78  cd brq
+   79  cd brij/
+   80  cd -
+   81  cd brij/
+   82  ls -aF
+   83  ls -al
+   84  cd Desktop/
+   85  ls -al
+   86  cd ~
+   87  pwd
+   88  ls -s
+   89  ls -as
+   90  mkdir thesis
+   91  cd thesis/
+   92  touch haiku.txt
+   93  touch littleWomen.txt
+   94  ls
+   95  cd .
+   96  pwd
+   97  cd ..
+   98  mkdir =p project/data/result
+   99  mkdir -p project/data/result
+  100  ls -al
+  101  cd project/
+  102  ls
+  103  cd data
+  104  ls
+  105  cd p
+  106  ls
+  107  cd result/
+  108  ls
+  109  touch deaft.txt
+  110  mv deaft.txt  draft.txt
+  111  vi draft.txt 
+  112  cat draft.txt 
+  113  touch removeThisFile.txt
+  114  echo "Delete this" > removeThisFile.txt 
+  115  cat removeThisFile.txt 
+  116  rm removeThisFile.txt 
+  117  ls -al
+  118  cd ~
+  119  ls -al
+  120  cd Desktop/
+  121  ls
+  122  cd shell-lesson-data/
+  123  ls -al
+  124  cd exercise-data/
+  125  ls -l
+  126  ls -al
+  127  mkdir writing 
+  128  ls -al
+  129  cd ~
+  130  pwd
+  131  cd Desktop/shell-lesson-data/exercise-data/writing/
+  132  cd ~
+  133  echo 'Renaming file'
+  134  cd thesis/
+  135  ls -al
+  136  touch draft.txt
+  137  ls -al
+  138  mv draft.txt  quotes.txt
+  139  ls -al
+  140  cd ..
+  141  ls thesis/
+  142  ls -al
+  143  ls thesis/
+  144  cp -r thesis/
+  145  cp -r thesis/ project/
+  146  ls project/
+  147  cp -r thesis/* project/
+  148  ls project/
+  149  cd project/
+  150  cd data/
+  151  ls -al
+  152  touch cubane.pdb
+  153  touch methane.pdb
+  154  touch pentane.pdb
+  155  touch ethane.pdb
+  156  touch octane.pdb
+  157  touch prppane.pdb
+  158  mv prppane.pdb  propane.pdb
+  159  ls -al
+  160  ls *.pdb
+  161  ls -al *.pdb
+  162  ls *ane.pdb
+  163  touch pctane.pdb
+  164  ls -al
+  165  ls -al ?ctane.pdb
+  166  ls -s
+  167  cd ..
+  168  ls -al
+  169  vi quotes.txt 
+  170  wc -l
+  171  wc -l quotes.txt 
+  172  vi haiku.txt 
+  173  less haiku.txt 
+  174  touch sort.txt
+  175  nano sort.txt 
+  176  cat sort.txt 
+  177  sort -n sort.txt 
+  178  head -n 5 sort.txt 
+  179  cat append.txt
+  180  touch append.txt
+  181  echo 'This is line 1' > append.txt 
+  182  cat append.txt 
+  183  echo 'This is line 2' >> append.txt 
+  184  cat append.txt 
+  185  cat append.txt  | wc -l
+  186  ls 
+  187  ls -al
+  188  cd thesis/
+  189  ls -al
+  190  cd ..
+  191  ls -al
+  192  cd ..
+  193  ls 
+  194  cd thesis/
+  195  ls 
+  196  cd ..
+  197  ls 
+  198  ls project/
+  199  ls data
+  200  ls data/
+  201  ls
+  202  cd project/
+  203  ls
+  204  cd data/
+  205  ls
+  206  cd ~
+  207  mkdir exercise-data
+  208  cd exercise-data/
+  209  mkdir creatures
+  210  cd creatures/
+  211  touch basilisk.dat minotaur.dat unicorn.dat
+  212  ls
+  213  vi basilisk.dat 
+  214  cat basilisk.dat 
+  215  vi minotaur.dat 
+  216  vi unicorn.dat 
+  217  head -2 basilisk.dat minotaur.dat  unicorn.dat 
+  218  head -2 | tail 1 basilisk.dat minotaur.dat  unicorn.dat 
+  219  for file in basilisk.dat minotaur.dat unicorn.dat ; do echo $file; head -n 2 | tail -n 1 ; done
+  220  vi scriptBin.sh
+  221  ls
+  222  vi scriptBin.sh
+  223  sc
+  224  scriptBin.sh
+  225  cat scriptBin.sh 
+  226  bash scriptBin.sh
+  227  nano scriptBin.sh 
+  228  cat scriptBin.sh 
+  229  bash scriptBin.sh
+  230  for file in *.pdb; do ls *.pdb; done
+  231  ls
+  232  for file in *.pdb; do ls *.dat; done
+  233  for file in *.pdb; do wc-l *.dat; done
+  234  for file in *.pdb; do wc -l *.dat; done
+  235  history
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ !221
+[?2004lls
+basilisk.dat  minotaur.dat  scriptBin.sh  unicorn.dat
+[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/exercise-data/creatures[01;32mbrij@TIGER01229[00m:[01;34m~/exercise-data/creatures[00m$ cd ~
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mkdir proteins
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ nano or[Kctance[K[Ke.pdb
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;43H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                octane.pdb                                         [1;96H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;58H(B[0;7m*[96G(B[m[?12l[?25h[2dATOM[?25l[28d[K[?12l[?25h[2;11H9  H[2;26H1 [?25l[?12l[?25h[33G-4.[?25l[?12l[?25h502   0.681   0.[?25l[?12l[?25h785  1.0[?25l0  0.00[3d[?12l[?25h[?25l[?12l[?25hATOM     10 [?25l[?12l[?25h H[20G[?25l[?12l[?25h[26G1[33G-5.[?25l[?12l[?25h254  -0.[?25l[?12l[?25h243  -0.[?25l[?12l[?25h537  1.0[?25l0  0.00[4d[?12l[?25h[?25l[?12l[?25hATOM[?25l[?12l[?25h[10G11 [?25l[?12l[?25h H[20G[?25l[?12l[?25h[26G1 [?25l[?12l[?25h[33G-4.[?25l[?12l[?25h357   1.[?25l[?12l[?25h252  -0.[?25l895  1.00  0.00[5d[?12l[?25h[?25l[?12l[?25hATOM[?25l[?12l[?25h[10G12 [?25l[?12l[?25h H[20G[?25l[?12l[?25h[26G1 [?25l[?12l[?25h[33G-3.009  -0.[?25l[?12l[?25h741  -1.[?25l467  1.00  0.00[6d[?12l[?25h[?25l[?12l[?25hATOM[?25l[?12l[?25h[10G13 [?25l[?12l[?25h H[20G[?25l[?12l[?25h[26G1 [?25l[?12l[?25h[33G-3.[?25l[?12l[?25h172  -1.[?25l[?12l[?25h337   0.[?25l[?12l[?25h206  1.0[?25l[?12l[?25h0  0.00[?25l[28d(B[0;7mSave modified buffer?                                                                            [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;18H(B[0;7mC(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;25H(B[0;7mM-D(B[m DOS Format[29;49H(B[0;7mM-A(B[m Append[29;73H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G        (B[0;7mM-M(B[m Mac Format[30;49H(B[0;7mM-P(B[m Prepend[30;73H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: octane.pdb(B[m[?12l[?25h[?25l[28;41H[1K (B[0;7m[ Writing... ](B[m[K[1;58H(B[0;7m [96G(B[m[28;41H(B[0;7m[ Wrote 5 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cat octane.pdb 
+[?2004lATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ [K]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34m'=p'[0m       [01;34mbin[0m             hello.txt       octane.pdb   [01;34mproteins[0m
+ [01;34mDesktop[0m   [01;34mexercise-data[0m   muUnixSession   [01;34mproject[0m      [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mv octane.pdb pro
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mv pro octane.pdb
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mc octane.pdb proteins/
+[?2004lCommand 'mc' not found, but can be installed with:
+sudo apt install mc
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ mc octane.pdb proteins/[1P[1@v
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd pro
+[?2004lbash: cd: pro: No such file or directory
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cd proteins/
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ ls
+[?2004loctane.pdb
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ cat octane.pdb 
+[?2004lATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ touch [K[K[K[K[K[Kvi middle.sh
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;33r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[33;1H"middle.sh" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                      [3;1H~                                                                                                      [4;1H~                                                                                                      [5;1H~                                                                                                      [6;1H~                                                                                                      [7;1H~                                                                                                      [8;1H~                                                                                                      [9;1H~                                                                                                      [10;1H~                                                                                                      [11;1H~                                                                                                      [12;1H~                                                                                                      [13;1H~                                                                                                      [14;1H~                                                                                                      [15;1H~                                                                                                      [16;1H~                                                                                                      [17;1H~                                                                                                      [18;1H~                                                                                                      [19;1H~                                                                                                      [20;1H~                                                                                                      [21;1H~                                                                                                      [22;1H~                                                                                                      [23;1H~                                                                                                      [24;1H~                                                                                                      [25;1H~                                                                                                      [26;1H~                                                                                                      [27;1H~                                                                                                      [28;1H~                                                                                                      [29;1H~                                                                                                      [30;1H~                                                                                                      [31;1H~                                                                                                      [32;1H~                                                                                                      [m[33;86H0,0-1[9CAll[1;1H[?25h[?25l[33;76Hi[1;1H[33;76H [1;1H[33;1H[1m-- INSERT --[m[33;13H[K[33;86H0,1[11CAll[1;1H[?25h[?25l[34m#[m[33;86H1,2[1;2H[?25h[?25l[34m![m[33;88H3[1;3H[?25h[?25l[34m [m[33;88H4[1;4H[?25h[?25l[34mb[m[33;88H5[1;5H[?25h[?25l[34mi[m[33;88H6[1;6H[?25h[?25l[34mn[m[33;88H7[1;7H[?25h[?25l[34m/[m[33;88H8[1;8H[?25h[?25l[34mb[m[33;88H9[1;9H[?25h[?25l[34ma[m[33;88H10[1;10H[?25h[?25l[34ms[m[33;89H1[1;11H[?25h[?25l[34mh[m[33;89H2[1;12H[?25h[?25l[2;1H[K[33;86H2,1 [2;1H[?25h[?25l[3;1H[K[33;86H3[3;1H[?25h[?25lh[33;88H2[3;2H[?25h[?25le[33;88H3[3;3H[?25h[?25la[33;88H4[3;4H[?25h[?25ld[33;88H5[3;5H[?25h[?25l[33;88H6[3;6H[?25h[?25l-[33;88H7[3;7H[?25h[?25l[35m-n[m[33;88H8[3;8H[?25h[?25l[33;88H9[3;9H[?25h[?25l[31m1[m[33;88H10[3;10H[?25h[?25l[31m5[m[33;89H1[3;11H[?25h[?25l[33;89H2[3;12H[?25h[?25lo[33;89H3[3;13H[?25h[?25lc[33;89H4[3;14H[?25h[?25lt[33;89H5[3;15H[?25h[?25la[33;89H6[3;16H[?25h[?25ln[33;89H7[3;17H[?25h[?25le[33;89H8[3;18H[?25h[?25l.[33;89H9[3;19H[?25h[?25lp[33;88H20[3;20H[?25h[?25ld[33;89H1[3;21H[?25h[?25lb[33;89H2[3;22H[?25h[?25l[33;89H3[3;23H[?25h[?25l|[33;89H4[3;24H[?25h[?25l[33;89H5[3;25H[?25h[?25l[33;89H4[3;24H[?25h[?25l[33;89H3[3;23H[?25h[?25l[33;89H2[3;22H[?25h[?25l[33;89H1[3;21H[?25h[?25l[33;89H0[3;20H[?25h[?25l[33;88H19[3;19H[?25h[?25l[33;89H8[3;18H[?25h[?25l[33;89H7[3;17H[?25h[?25l[33;89H6[3;16H[?25h[?25l[33;89H5[3;15H[?25h[?25l[33;89H4[3;14H[?25h[?25l[33;89H3[3;13H[?25h[?25l[33;89H2[3;12H[?25h[?25l[33;89H1[3;11H[?25h[?25l[33;89H0[3;10H[?25h[?25l[33;89H1[3;11H[?25h[?25l[33;89H0[3;10H[?25h[?25l[33;89H1[3;11H[?25h[?25l octane.pdb | [33;89H0[3;10H[?25h[?25l octane.pdb | [33;88H9 [3;9H[?25h[?25l[31m3[m octane.pdb |[33;88H10[3;10H[?25h[?25l[33;89H1[3;11H[?25h[?25l[33;89H2[3;12H[?25h[?25l[33;89H3[3;13H[?25h[?25l[33;89H4[3;14H[?25h[?25l[33;89H5[3;15H[?25h[?25l[33;89H6[3;16H[?25h[?25l[33;89H7[3;17H[?25h[?25l[33;89H8[3;18H[?25h[?25l[33;89H9[3;19H[?25h[?25l[33;88H20[3;20H[?25h[?25l[33;89H1[3;21H[?25h[?25l[33;89H2[3;22H[?25h[?25l[33;89H3[3;23H[?25h[?25l[33;89H4[3;24H[?25h[?25lt[33;89H5[3;25H[?25h[?25la[33;89H6[3;26H[?25h[?25li[33;89H7[3;27H[?25h[?25l[38;5;130mtail[m[33;89H8[3;28H[?25h[?25l[33;89H9[3;29H[?25h[?25l-[33;88H30[3;30H[?25h[?25l[35m-n[m[33;89H1[3;31H[?25h[?25l[33;89H2[3;32H[?25h[?25l[31m1[m[33;89H3[3;33H[?25h[33;1H[K[3;32H[?25l[33;76H^[[3;32H[33;76H  [3;33H[33;86H3,32[10CAll[3;32H[?25h[?25l[33;76H:[3;32H[33;76H[K[33;1H:[?25hwq[?25l[?2004l[>4;m"middle.sh" [New] 3L, 46B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ bash middle.sh 
+[?2004lATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ cat middle.sh 
+[?2004l#! bin/bash
+
+head -n 3 octane.pdb | tail -n 1
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ e[K
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ nano midq
+[?2004l[?2004h[?1049h[22;0;0t[1;33r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[31;46H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                      midq                                               [1;102H(B[m[32d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[32;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[33d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[2d[?12l[?25h[?25l[31d[J[33d[?12l[?25h[33;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ nano midq[Kdle.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;33r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[31;45H(B[0;7m[ Reading... ](B[m[31;44H(B[0;7m[ Read 3 lines ](B[m[H(B[0;7m  GNU nano 6.2                                   middle.sh                                             [1;102H(B[m[32d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[32;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[33d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[2d[36m#! bin/bash[4d(B[0;1m[34mhead[35m -n[39m(B[m 3 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h3[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[31d[K[?12l[?25h[4;14H[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hp[?25l[?12l[?25hd[?25l[?12l[?25hb[?25l[1;60H(B[0;7m*[102G(B[m[?12l[?25h[4;20H[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h" [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;12H[?25l[?12l[?25h[32m$[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;13H[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;14H[?25l[?12l[?25h(B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;15H[?25l[31d(B[0;7mSave modified buffer?                                                                                  [32;1H Y(B[m Yes[K[33d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[31;23H[?12l[?25h[?25l[32d(B[0;7m^G(B[m Help[32;26H(B[0;7mM-D(B[m DOS Format[32;51H(B[0;7mM-A(B[m Append[32;76H(B[0;7mM-B(B[m Backup File[33d(B[0;7m^C(B[m Cancel[17G         (B[0;7mM-M(B[m Mac Format[33;51H(B[0;7mM-P(B[m Prepend[33;76H(B[0;7m^T(B[m Browse[31d(B[0;7mFile Name to Write: middle.sh(B[m[?12l[?25h[?25l[31;44H[1K (B[0;7m[ Writing... ](B[m[K[1;60H(B[0;7m [102G(B[m[31;44H(B[0;7m[ Wrote 3 lines ](B[m[J[33d[?12l[?25h[33;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ nano middle.sh q[Kcat middle.sh [1@bash[C[C[C[C[C[C[C[C[C[C[C
+[?2004lhead: cannot open '' for reading: No such file or directory
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ bash middle.sh nano[C[C[C[C[C[C[C[C[C[C[Cbash[C[C[C[C[C[C[C[C[C[C[Coctane.pdb 
+[?2004lATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ bash middle.sh octane.pdb [Knano[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;33r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[31;45H(B[0;7m[ Reading... ](B[m[31;44H(B[0;7m[ Read 3 lines ](B[m[H(B[0;7m  GNU nano 6.2                                   middle.sh                                             [1;102H(B[m[32d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[32;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[33d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[2d[36m#! bin/bash[4d(B[0;1m[34mhead[35m -n[39m(B[m 3 (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h3[?25l[1;60H(B[0;7m*[102G(B[m[?12l[?25h[4;9H[1P[?25l[?12l[?25h [?25l[?12l[?25h[1P [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h  [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;14H[?25l[31d[K[?12l[?25h[4;14H' [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;15H[?25l[?12l[?25h[32m$[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;16H[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;17H[?25l[?12l[?25h(B[0;1m[33m'$2'[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[4;18H[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h  '[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$3[39m(B[m[?25l[?12l[?25h(B[0;1m[33m'$3'[39m(B[m[?25l[?12l[?25h'(B[0;1m[31m$3[39m(B[m[K[?25l[?12l[?25h"[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[31m$3[39m(B[m"[K[?25l[?12l[?25h(B[0;1m[33m"$3"[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h'(B[0;1m[31m$2[39m(B[m[1P[?25l[?12l[?25h(B[0;1m[33m" | tail -n  "[31m$3[39m(B[m"[4;18H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h'[?25l[?12l[?25h[1P[?25l[?12l[?25h(B[0;1m[33m"$2"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m  (B[0;1m[33m"$3"[4;15H[39m(B[m[?25l[31d(B[0;7mSave modified buffer?                                                                                  [32;1H Y(B[m Yes[K[33d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[31;23H[?12l[?25h[?25l[32d(B[0;7m^G(B[m Help[32;26H(B[0;7mM-D(B[m DOS Format[32;51H(B[0;7mM-A(B[m Append[32;76H(B[0;7mM-B(B[m Backup File[33d(B[0;7m^C(B[m Cancel[17G         (B[0;7mM-M(B[m Mac Format[33;51H(B[0;7mM-P(B[m Prepend[33;76H(B[0;7m^T(B[m Browse[31d(B[0;7mFile Name to Write: middle.sh(B[m[?12l[?25h[?25l[31;44H[1K (B[0;7m[ Writing... ](B[m[K[1;60H(B[0;7m [102G(B[m[31;44H(B[0;7m[ Wrote 3 lines ](B[m[J[33d[?12l[?25h[33;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ nano middle.sh [11@bash middle.sh octane.pdb[C3 2
+[?2004lhead: invalid number of lines: ‘octane.pdb’
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ cat middle.sh 
+[?2004l#! bin/bash
+
+head -n "$1" "$2" | tail -n  "$3"
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ cat middle.sh bash middle.sh octane.pdb 3 2[C[1P 21 2[C[C[K1
+[?2004lhead: invalid number of lines: ‘octane.pdb’
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ bash middle.sh octane.pdb 1 1[Kcat octane.pdb 
+[?2004lATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ cat octane.pdb bash middle.sh octane.pdb 1 1[1P 14 1[C[C[K1
+[?2004lhead: invalid number of lines: ‘octane.pdb’
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ pwd
+[?2004l/home/brij/proteins
+[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~/proteins[01;32mbrij@TIGER01229[00m:[01;34m~/proteins[00m$ cd ..
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ cat [K[K[K[Knano haiku.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;33r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[31;46H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                   haiku.txt                                             [1;102H(B[m[32d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[32;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[33d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[2d[?12l[?25h[?25l[1;60H(B[0;7m*[102G(B[m[?12l[?25h[2d.[?25l[?12l[?25h.[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[3d[?12l[?25h[?25l[?12l[?25hThe Ta[?25l[?12l[?25ho that i[?25ls seen[31d[K[4d[?12l[?25hI[?25l[?12l[?25hs not t[?25l[?12l[?25hhe true [?25l[?12l[?25hTao, un[?25ltil[5d[?12l[?25hYou[?25l[?12l[?25h bring f[?25l[?12l[?25hresh ton[?25ler.[7d[?12l[?25hWi[?25l[?12l[?25hth searching com[?25les loss[8d[?12l[?25hand the [?25l[?12l[?25hpresence[?25l[?12l[?25h of abse[?25lnce:[9d[?12l[?25h"[?25l[?12l[?25hMy Thesis" no[?25l[?12l[?25ht found.[?25l[11d[?12l[?25hYeste[?25l[?12l[?25hrday it [?25lworked[12d[?12l[?25hT[?25loday it is not working[13d[?12l[?25h[?25l[?12l[?25hSoftwar[?25l[?12l[?25he is lik[?25l[?12l[?25he that.[?25l[31d(B[0;7mSave modified buffer?                                                                                  [32;1H Y(B[m Yes[K[33d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[31;23H[?12l[?25h[?25l[32d(B[0;7m^G(B[m Help[32;26H(B[0;7mM-D(B[m DOS Format[32;51H(B[0;7mM-A(B[m Append[32;76H(B[0;7mM-B(B[m Backup File[33d(B[0;7m^C(B[m Cancel[17G         (B[0;7mM-M(B[m Mac Format[33;51H(B[0;7mM-P(B[m Prepend[33;76H(B[0;7m^T(B[m Browse[31d(B[0;7mFile Name to Write: haiku.txt(B[m[?12l[?25h[?25l[31;44H[1K (B[0;7m[ Writing... ](B[m[K[1;60H(B[0;7m [102G(B[m[31;43H(B[0;7m[ Wrote 12 lines ](B[m[J[33d[?12l[?25h[33;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep not haiku.txt 
+[?2004lIs [01;31m[Knot[m[K the true Tao, until
+"My Thesis" [01;31m[Knot[m[K found.
+Today it is [01;31m[Knot[m[K working
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep not haiku.txt [1P[1P[1P[1@T[1@h[1@e
+[?2004l[01;31m[KThe[m[K Tao that is seen
+"My [01;31m[KThe[m[Ksis" not found.
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep -w haiku.txt 
+[?2004l^C
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep -w haiku.txt [1@T[C[1@h[1@e[1@ 
+[?2004l[01;31m[KThe[m[K Tao that is seen
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep "not the" haiku.txt 
+[?2004lIs [01;31m[Knot the[m[K true Tao, until
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep "not the" haiku.txt [3P-w The[C[C[C[C[C[C[C[C[C[C[C[1@n
+[?2004l[32m[K2[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep -nw The haiku.txt [1P
+[?2004l[32m[K2[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K8[m[K[36m[K:[m[K"My [01;31m[KThe[m[Ksis" not found.
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ grep -n The haiku.txt [1P[1@i[1@n[1@w
+[?2004l[32m[K2[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K3[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K7[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ind [K[K[K[Kfind .
+[?2004l.
+./.profile
+./exercise-data
+./exercise-data/creatures
+./exercise-data/creatures/basilisk.dat
+./exercise-data/creatures/minotaur.dat
+./exercise-data/creatures/scriptBin.sh
+./exercise-data/creatures/unicorn.dat
+./muUnixSession
+./.bash_history
+./haiku.txt
+./.viminfo
+./thesis
+./thesis/littleWomen.txt
+./thesis/haiku.txt
+./thesis/quotes.txt
+./proteins
+./proteins/middle.sh
+./proteins/octane.pdb
+./project
+./project/data
+./project/data/cubane.pdb
+./project/data/octane.pdb
+./project/data/pctane.pdb
+./project/data/propane.pdb
+./project/data/ethane.pdb
+./project/data/methane.pdb
+./project/data/result
+./project/data/result/draft.txt
+./project/data/pentane.pdb
+./project/littleWomen.txt
+./project/append.txt
+./project/haiku.txt
+./project/quotes.txt
+./project/thesis
+./project/thesis/littleWomen.txt
+./project/thesis/haiku.txt
+./project/thesis/quotes.txt
+./project/sort.txt
+./.local
+./.local/share
+./.local/share/nano
+./Desktop
+./Desktop/shell-lesson-data
+./Desktop/shell-lesson-data/exercise-data
+./Desktop/shell-lesson-data/exercise-data/writing
+./Desktop/shell-lesson-data/north-pacific-gyre
+./.bash_logout
+./.motd_shown
+./bin
+./bin/unixTutorial
+./bin/testSession
+./bin/samplefile.txt
+./=p
+./.bashrc
+./.lesshst
+./hello.txt
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ find . -iname 'lession*
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ find . -iname 'lession*'
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ find . -iname 'lession*'[1P 'lession*'[1P 'lession*'[1P 'lession*'[1P 'lession*'[1P 'lession*'f 'lession*'[C[1P'lession*'[1P'lession*'d'lession*'[C 'lession*'[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K
+[?2004lfind: warning: the -d option is deprecated; please use -depth instead, because the latter is a POSIX-compliant feature.
+./.profile
+./exercise-data/creatures/basilisk.dat
+./exercise-data/creatures/minotaur.dat
+./exercise-data/creatures/scriptBin.sh
+./exercise-data/creatures/unicorn.dat
+./exercise-data/creatures
+./exercise-data
+./muUnixSession
+./.bash_history
+./haiku.txt
+./.viminfo
+./thesis/littleWomen.txt
+./thesis/haiku.txt
+./thesis/quotes.txt
+./thesis
+./proteins/middle.sh
+./proteins/octane.pdb
+./proteins
+./project/data/cubane.pdb
+./project/data/octane.pdb
+./project/data/pctane.pdb
+./project/data/propane.pdb
+./project/data/ethane.pdb
+./project/data/methane.pdb
+./project/data/result/draft.txt
+./project/data/result
+./project/data/pentane.pdb
+./project/data
+./project/littleWomen.txt
+./project/append.txt
+./project/haiku.txt
+./project/quotes.txt
+./project/thesis/littleWomen.txt
+./project/thesis/haiku.txt
+./project/thesis/quotes.txt
+./project/thesis
+./project/sort.txt
+./project
+./.local/share/nano
+./.local/share
+./.local
+./Desktop/shell-lesson-data/exercise-data/writing
+./Desktop/shell-lesson-data/exercise-data
+./Desktop/shell-lesson-data/north-pacific-gyre
+./Desktop/shell-lesson-data
+./Desktop
+./.bash_logout
+./.motd_shown
+./bin/unixTutorial
+./bin/testSession
+./bin/samplefile.txt
+./bin
+./=p
+./.bashrc
+./.lesshst
+./hello.txt
+.
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ find . -name *.txt
+[?2004lfind: paths must precede expression: `hello.txt'
+find: possible unquoted pattern after predicate `-name'?
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ wc [K[K[Kls
+[?2004l[0m[01;34m'=p'[0m       [01;34mbin[0m             haiku.txt   muUnixSession   [01;34mproteins[0m
+ [01;34mDesktop[0m   [01;34mexercise-data[0m   hello.txt   [01;34mproject[0m         [01;34mthesis[0m
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ ls *.txt
+[?2004lhaiku.txt  hello.txt
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ wc -l [K(find . -name "*.txt")
+[?2004lbash: syntax error near unexpected token `('
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ wc -l(find . -name "*.txt")[1@ [1@$
+[?2004l  12 ./haiku.txt
+   0 ./thesis/littleWomen.txt
+   0 ./thesis/haiku.txt
+   0 ./thesis/quotes.txt
+   9 ./project/data/result/draft.txt
+   0 ./project/littleWomen.txt
+   2 ./project/append.txt
+  56 ./project/haiku.txt
+   7 ./project/quotes.txt
+   0 ./project/thesis/littleWomen.txt
+   0 ./project/thesis/haiku.txt
+   0 ./project/thesis/quotes.txt
+   8 ./project/sort.txt
+   3 ./bin/samplefile.txt
+   1 ./hello.txt
+  98 total
+[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;brij@TIGER01229: ~[01;32mbrij@TIGER01229[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-21 08:58:33+05:30 [COMMAND_EXIT_CODE="0"]
